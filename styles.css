@@ -392,3 +392,8 @@ html:not([lang="am"]) .lang-am { display: none !important; }
 .dish h3 .lang-am, .brand-name .lang-am, .footer-name .lang-am { font-family: var(--font-am); }
 html[lang="am"] .hero-am { font-size: inherit; font-weight: 700; opacity: 1; margin: 0; }
 .footer-name span { margin-left: 0; color: var(--ink); font-size: inherit; font-weight: 700; }
+
+/* Dish photo placeholder (shows the photo automatically once the file is added) */
+.dish-thumb.ph { display: block; position: relative; overflow: hidden;
+  background: var(--accent-tint) url("images/logo-mark.svg") center / 58% no-repeat; }
+.dish-thumb.ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
