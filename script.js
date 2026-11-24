@@ -84,5 +84,4 @@
     window.location.href = `mailto:${CATERING_EMAIL}?subject=${encodeURIComponent("Catering inquiry — " + d.date)}&body=${encodeURIComponent(body)}`;
   });
 
-  document.getElementById("year").textContent = new Date().getFullYear();
 })();

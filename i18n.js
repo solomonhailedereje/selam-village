@@ -140,8 +140,7 @@ window.SELAM_AM = {
   "opt.here": "በሰላም ቪሌጅ (የአትክልት ስፍራ / አዳራሽ)",
   "opt.there": "በእኔ ቦታ ድግስ",
   "opt.grad": "ምረቃ",
-  "footer.tag": "ከ1983 ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።",
-  "footer.rights": "መብቱ በሕግ የተጠበቀ ነው።"
+  "footer.tag": "ከ1983 ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።"
 };
 
 window.SELAM_EN_EXTRA = {
