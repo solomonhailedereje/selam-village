@@ -144,7 +144,7 @@ window.SELAM_AM = {
   "nav.home": "መነሻ",
   "home.eyebrow": "እንኳን ደህና መጡ",
   "home.title": "ሁሉም የሰላም ቪሌጅ ነገር፣ በአንድ ጠቅታ",
-  "card.menu": "ጥሬ ሥጋ፣ የበሬና የፍየል ጥብስ፣ ዱለት፣ የጾም ምግቦችና ሙሉ መጠጥ ቤት።",
+  "card.menu": "ጥሬ ሥጋ፣ ክትፎ፣ የበሬና የፍየል ጥብስ፣ ዱለት፣ የጾም ምግቦችና ሙሉ መጠጥ ቤት።",
   "card.garden": "በሰፊው የአትክልት ስፍራችን በዛፎች ጥላ ሥር ይመገቡ — ወይም ዝግጅትዎን ከእኛ ጋር ያድርጉ።",
   "card.catering": "ሠርግ፣ በዓላትና የድርጅት ዝግጅቶች — በእኛ ቦታ ወይም በእርስዎ።",
   "card.story": "ከ1983 ጀምሮ የአራት አሥርት ዓመታት የኢትዮጵያ እንግዳ ተቀባይነት።",
@@ -165,10 +165,17 @@ window.SELAM_AM = {
   "opt.pkg.wedding": "ሠርግና በዓል",
   "opt.pkg.corporate": "ለድርጅትና ለማኅበረሰብ",
   "opt.pkg.unsure": "ገና አልወሰንኩም",
+  "d.kitfo": "በንጥር ቅቤና በሚጥሚጣ የተለወሰ በደንብ የተከተፈ ቀይ ሥጋ — ጥሬ፣ ለብለብ ወይም የበሰለ፣ ከአይብና ከጎመን ጋር።",
+  "d.special": "የቤታችን ልዩ፤ ምርጥ ክትፎ ከአይብ፣ ከጎመን፣ ከቆጮና ከሚጥሚጣ ጋር — ሙሉ ባህላዊ ገበታ።",
+  "tag.special": "የቤቱ ልዩ",
   "footer.tag": "ከ1983 ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።"
 };
 
 window.SELAM_EN_EXTRA = {
+  "card.menu": "Tire siga, kitfo, ox & goat tibs, dulet, vegetarian dishes and a full bar.",
+  "tag.special": "House special",
+  "d.special": "Our house special: premium kitfo served with ayib, gomen, kocho and mitmita — the full traditional spread.",
+  "d.kitfo": "Finely minced lean beef warmed in niter kibbeh and mitmita — raw, lebleb (lightly warmed) or cooked, with ayib and gomen.",
   "tag.signature": "Signature",
   "tag.chef": "Chef's pick",
   "tag.spicy": "Spicy",
