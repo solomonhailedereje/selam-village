@@ -69,7 +69,7 @@
     if (!form) return;
     const sel = form.elements.pkg;
     if (sel && [...sel.options].some(o => o.value === pkg)) sel.value = pkg;
-    if (pkg === "inhouse") form.elements.where.value = "here";
+    if (pkg === "inhouse" && form.elements.where.value === "there") form.elements.where.value = "garden";
     if (pkg === "wedding") form.elements.type.value = "wedding";
     if (pkg === "corporate") form.elements.type.value = "corporate";
     document.querySelectorAll(".pkg").forEach(c => c.classList.toggle("chosen", c.dataset.pkg === pkg));
