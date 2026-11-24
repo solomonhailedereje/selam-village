@@ -157,6 +157,13 @@ window.SELAM_AM = {
   "gal.tibs2": "የሚንተከተክ ጥብስ",
   "gal.fasting": "የጾም በያይነቱ",
   "gal.credits": "የፎቶ ምንጮች",
+  "pkg.cta": "ይህንን ጥቅል ያስይዙ",
+  "form.pkg": "የአገልግሎት ጥቅል",
+  "form.intro": "ከላይ ጥቅል ይምረጡ ወይም ቅጹን ይሙሉ — ለማረጋገጥ መልሰን እንደውልልዎታለን።",
+  "opt.pkg.inhouse": "በቤት ውስጥ ዝግጅት (በሰላም ቪሌጅ)",
+  "opt.pkg.wedding": "ሠርግና በዓል",
+  "opt.pkg.corporate": "ለድርጅትና ለማኅበረሰብ",
+  "opt.pkg.unsure": "ገና አልወሰንኩም",
   "footer.tag": "ከ1983 ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።"
 };
 

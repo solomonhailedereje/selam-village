@@ -63,6 +63,28 @@
   /* ---------- Catering form ---------- */
   const form = document.getElementById("inquire");
   const status = document.getElementById("formStatus");
+
+  /* Package cards open the form with that package already chosen */
+  function choosePackage(pkg, scroll) {
+    if (!form) return;
+    const sel = form.elements.pkg;
+    if (sel && [...sel.options].some(o => o.value === pkg)) sel.value = pkg;
+    if (pkg === "inhouse") form.elements.where.value = "here";
+    if (pkg === "wedding") form.elements.type.value = "wedding";
+    if (pkg === "corporate") form.elements.type.value = "corporate";
+    document.querySelectorAll(".pkg").forEach(c => c.classList.toggle("chosen", c.dataset.pkg === pkg));
+    form.classList.remove("flash"); void form.offsetWidth; form.classList.add("flash");
+    if (scroll) form.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => form.elements.name.focus({ preventScroll: true }), scroll ? 650 : 0);
+  }
+  document.querySelectorAll(".pkg[data-pkg]").forEach(card => {
+    card.addEventListener("click", () => choosePackage(card.dataset.pkg, true));
+    card.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); choosePackage(card.dataset.pkg, true); }
+    });
+  });
+  const urlPkg = new URLSearchParams(location.search).get("pkg");
+  if (urlPkg) choosePackage(urlPkg, false);
   if (form) form.addEventListener("submit", e => {
     e.preventDefault();
     let ok = true;
@@ -77,12 +99,14 @@
     if (!ok) return;
 
     const d = Object.fromEntries(new FormData(form));
+    const label = name => { const el = form.elements[name]; return el.options[el.selectedIndex].text; };
     const body = [
+      `Package: ${label("pkg")}`, `Where: ${label("where")}`,
       `Name: ${d.name}`, `Phone: ${d.phone}`, `Email: ${d.email || "-"}`,
-      `Event date: ${d.date}`, `Guests: ${d.guests}`, `Event type: ${d.type}`,
+      `Event date: ${d.date}`, `Guests: ${d.guests}`, `Event type: ${label("type")}`,
       "", d.msg || ""
     ].join("\n");
-    window.location.href = `mailto:${CATERING_EMAIL}?subject=${encodeURIComponent("Catering inquiry — " + d.date)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${CATERING_EMAIL}?subject=${encodeURIComponent("Booking request — " + label("pkg") + " — " + d.date)}&body=${encodeURIComponent(body)}`;
   });
 
 })();

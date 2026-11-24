@@ -4,8 +4,9 @@ Website for **Selam Village**, a traditional Ethiopian restaurant and catering c
 
 - Bilingual: English / Amharic (toggle in the header, choice is remembered)
 - Location: Giorgis, next to Addis Ababa Restaurant, Addis Ababa
-- Separate short pages: `index.html` (home), `story.html`, `menu.html`, `garden.html` (garden & in-house events), `gallery.html`, `catering.html` (packages + inquiry form), `contact.html` (address, hours, map)
-- Food photos from Wikimedia Commons (free licences, credited on the gallery page)
+- Separate short pages: `index.html` (home), `story.html`, `menu.html`, `garden.html` (garden & in-house events), `catering.html` (clickable packages that open a pre-filled booking form), `contact.html` (address, hours, map)
+- Ox-skull logo (`images/logo-mark.svg`; the round "Since 1983 · ከ1983 ጀምሮ" emblem is inline SVG in each page)
+- Food photos from Wikimedia Commons (free licences, credited under **Photo credits** in every page footer)
 - Pure HTML/CSS/JS — no build step. Open `index.html` or host on GitHub Pages.
 
 ## Before going live — replace placeholders

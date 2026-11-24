@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <defs>
+    <mask id="h" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="110">
+      <rect width="120" height="110" fill="#fff"/>
+      <ellipse cx="49" cy="42" rx="6.5" ry="4.5" transform="rotate(22 49 42)" fill="#000"/>
+      <ellipse cx="71" cy="42" rx="6.5" ry="4.5" transform="rotate(-22 71 42)" fill="#000"/>
+      <ellipse cx="56" cy="94" rx="2.2" ry="3.6" fill="#000"/>
+      <ellipse cx="64" cy="94" rx="2.2" ry="3.6" fill="#000"/>
+      <path d="M50 55q2 15 6 27M70 55q-2 15-6 27" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g mask="url(#h)" fill="#6b4426">
+    <path d="M45 30C30 33 13 28 6 12 4 6 8 1 11.5 5.5 18 16 30 21 47 20z"/>
+    <path d="M75 30C90 33 107 28 114 12 116 6 112 1 108.5 5.5 102 16 90 21 73 20z"/>
+    <path d="M42 18c8-7 28-7 36 0 6 6 4 18 0 28-4 14-8 34-10 50-2 9-14 9-16 0-2-16-6-36-10-50-4-10-6-22 0-28z"/>
+  </g>
+  <path d="M60 21l4.5 6.5L60 34l-4.5-6.5z" fill="#c9a14a"/>
+</svg>

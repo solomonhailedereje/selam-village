@@ -9,24 +9,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Ethiopic:wght@300;400;500;600&family=Noto+Serif+Ethiopic:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c9a14a'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%231a120d' font-family='serif'%3E%E1%88%B0%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
 </head>
 <body class="page-garden">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <mask id="oxHoles" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="110">
+      <rect width="120" height="110" fill="#fff"/>
+      <ellipse cx="49" cy="42" rx="6.5" ry="4.5" transform="rotate(22 49 42)" fill="#000"/>
+      <ellipse cx="71" cy="42" rx="6.5" ry="4.5" transform="rotate(-22 71 42)" fill="#000"/>
+      <ellipse cx="56" cy="94" rx="2.2" ry="3.6" fill="#000"/>
+      <ellipse cx="64" cy="94" rx="2.2" ry="3.6" fill="#000"/>
+      <path d="M50 55q2 15 6 27M70 55q-2 15-6 27" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </mask>
+    <symbol id="ox" viewBox="0 0 120 110">
+      <g mask="url(#oxHoles)" fill="currentColor">
+        <path d="M45 30C30 33 13 28 6 12 4 6 8 1 11.5 5.5 18 16 30 21 47 20z"/>
+        <path d="M75 30C90 33 107 28 114 12 116 6 112 1 108.5 5.5 102 16 90 21 73 20z"/>
+        <path d="M42 18c8-7 28-7 36 0 6 6 4 18 0 28-4 14-8 34-10 50-2 9-14 9-16 0-2-16-6-36-10-50-4-10-6-22 0-28z"/>
+      </g>
+      <path d="M60 21l4.5 6.5L60 34l-4.5-6.5z" fill="#c9a14a"/>
+    </symbol>
+  </defs>
+</svg>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a href="index.html" class="brand">
-    <span class="brand-mark">ሰ</span>
+    <svg class="brand-skull" aria-hidden="true"><use href="#ox"/></svg>
     <span class="brand-text">
       <span class="brand-name">Selam Village</span>
-      <span class="brand-sub" data-i18n="brand.sub">Est. 1983</span>
+      <span class="brand-sub">Since 1983 · <span class="am-inline">ከ1983 ጀምሮ</span></span>
     </span>
   </a>
   <nav class="nav-links" id="navLinks">
     <a href="story.html" data-i18n="nav.story">Our Story</a>
     <a href="menu.html" data-i18n="nav.menu">Menu</a>
     <a href="garden.html" data-i18n="nav.dining" aria-current="page">Garden & Events</a>
-    <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
     <a href="catering.html" data-i18n="nav.catering">Catering</a>
     <a href="contact.html" data-i18n="nav.contact">Visit</a>
   </nav>
@@ -65,7 +84,7 @@
         <li><span class="f-ico">◈</span><div><strong data-i18n="f.2t">Traditional coffee ceremony</strong><p data-i18n="f.2d">Roasted, ground and brewed before your eyes, with frankincense in the air.</p></div></li>
         <li><span class="f-ico">◈</span><div><strong data-i18n="f.3t">In-house events</strong><p data-i18n="f.3d">Host your wedding, birthday, graduation or company party in our garden and hall — we handle the food, drinks and service.</p></div></li>
       </ul>
-      <a href="catering.html#inquire" class="btn" data-i18n="dining.cta">Book Your Event</a>
+      <a href="catering.html?pkg=inhouse#inquire" class="btn" data-i18n="dining.cta">Book Your Event</a>
     </div>
   </div>
 </section>
@@ -77,7 +96,18 @@
   <div class="tibeb" aria-hidden="true"></div>
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="brand-mark big">ሰ</span>
+      <svg class="footer-emblem" viewBox="0 0 200 200" role="img" aria-label="Selam Village — since 1983 · ከ1983 ጀምሮ">
+        <defs>
+          <path id="footer-emblem-top" d="M24,100 A76,76 0 0,1 176,100"/>
+          <path id="footer-emblem-bot" d="M11,100 A89,89 0 0,0 189,100"/>
+        </defs>
+        <circle cx="100" cy="100" r="97" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="100" cy="100" r="66" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/>
+        <text class="emb-t"><textPath href="#footer-emblem-top" startOffset="50%" text-anchor="middle">SINCE 1983</textPath></text>
+        <text class="emb-t emb-am"><textPath href="#footer-emblem-bot" startOffset="50%" text-anchor="middle">ከ1983 ጀምሮ</textPath></text>
+        <circle cx="16" cy="100" r="2.5" fill="#c9a14a"/><circle cx="184" cy="100" r="2.5" fill="#c9a14a"/>
+        <use href="#ox" x="52" y="56" width="96" height="88"/>
+      </svg>
       <p class="footer-name">Selam Village <span>ሰላም ቪሌጅ</span></p>
       <p data-i18n="footer.tag">Authentic Ethiopian cuisine & catering since 1983.</p>
       <p class="footer-addr" data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</p>
@@ -87,9 +117,23 @@
       <a href="menu.html" data-i18n="nav.menu">Menu</a>
       <a href="catering.html" data-i18n="nav.catering">Catering</a>
       <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
-      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
       <a href="contact.html" data-i18n="nav.contact">Visit</a>
     </nav>
+    <details class="credits">
+      <summary data-i18n="gal.credits">Photo credits</summary>
+      <ul>
+        <li>Non-fasting Beyaynetu in Yod Abyssinia 1 — Jean Rebiffé, <a href="https://commons.wikimedia.org/wiki/File:Non-fasting_Beyaynetu_in_Yod_Abyssinia_1.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Tere siga - raw beef dish, Ethiopia 2014 — Neftalem, <a href="https://commons.wikimedia.org/wiki/File:Tere_siga_-_raw_beef_dish,_Ethiopia_2014.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Tibs in Yod Abyssinia — Jean Rebiffé, <a href="https://commons.wikimedia.org/wiki/File:Tibs_in_Yod_Abyssinia.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Mutton tibs and injera — ShanaliCT, <a href="https://commons.wikimedia.org/wiki/File:Mutton_tibs_and_injera.jpg" target="_blank" rel="noopener">CC BY 4.0</a>, via Wikimedia Commons</li>
+        <li>Beyaynetu ethiopian food — Yonatan Solomon, <a href="https://commons.wikimedia.org/wiki/File:Beyaynetu_ethiopian_food.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Ethiopian vegetarian sampler — Sdkb, <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_vegetarian_sampler.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Ethiopian fasting platter — Jbinthecity, <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_fasting_platter.jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+        <li>Coffee ceremony of Ethiopia and Eritrea 1 — ProtoplasmaKid, <a href="https://commons.wikimedia.org/wiki/File:Coffee_ceremony_of_Ethiopia_and_Eritrea_1.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Jebena — O.Mustafin, <a href="https://commons.wikimedia.org/wiki/File:Jebena.jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+        <li>Tej (Ethiopian honey wine) (27241999346) — cotterillmike, <a href="https://commons.wikimedia.org/wiki/File:Tej_(Ethiopian_honey_wine)_(27241999346).jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+      </ul>
+    </details>
   </div>
 </footer>
 
