@@ -12,7 +12,7 @@ Website for **Selam Village**, a traditional Ethiopian restaurant and catering c
 ## Before going live — replace placeholders
 - Phone number in `contact.html`
 - A real garden photo at `images/garden.jpg` and a room photo at `images/rooms.jpg` (see `images/README.md`)
-- Room types, amenities and the vegetarian dishes on the menu — confirm they match what Selam Village really offers
+- The year Selam Butchery & Grocery 2 opened (story timeline shows "Expansion"), room amenities and the vegetarian dishes on the menu — confirm they match what Selam Village really offers
 - `CATERING_EMAIL` in `script.js` and the email link in `contact.html`
 - Google Maps embed currently points to Addis Ababa Restaurant, Giorgis — swap for Selam Village's own pin once listed
 

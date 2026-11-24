@@ -370,3 +370,18 @@ html[lang="am"] .page-hero-am { display: none; }
   background: var(--img) center / cover no-repeat,
     var(--accent-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='64' viewBox='0 0 96 64'%3E%3Cpath d='M8 8v48M8 40h80v16M8 32h80v8M24 20h20a8 8 0 0 1 8 8v4H16v-4a8 8 0 0 1 8-8z' fill='none' stroke='%235c3a21' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E") center / 120px no-repeat;
 }
+
+/* Emblem: name under the bull */
+.emb-name { font: 700 11px var(--font-en, "Inter"), sans-serif; letter-spacing: 1.6px; fill: currentColor; }
+.emb-t { font-size: 13px; letter-spacing: 3px; }
+/* Meat supply: full-width package */
+.pkg-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1.4fr auto; gap: 24px 40px; align-items: center; }
+.pkg-wide ul { margin: 0; }
+.pkg-wide .pkg-cta { align-self: center; }
+.stat-word { font-size: clamp(1.6rem, 2.6vw, 2.2rem); }
+@media (max-width: 900px) { .pkg-wide { grid-template-columns: 1fr; } }
+/* Rooms: two room types */
+.page-rooms .packages { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .page-rooms .packages { grid-template-columns: 1fr; } }
+/* Garden photo placeholder: plain tint (bed icon is only for rooms) */
+.dp1.empty { background: var(--accent-tint); }
