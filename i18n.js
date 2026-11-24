@@ -111,8 +111,8 @@ window.SELAM_AM = {
   "contact.phone": "ስልክ",
   "contact.email": "ኢሜይል",
   "hours.title": "የሥራ ሰዓት",
-  "hours.wk": "ከሰኞ እስከ ዓርብ",
-  "hours.sat": "ቅዳሜና እሑድ",
+  "hours.wk": "ሰኞ – ዓርብ",
+  "hours.sat": "ቅዳሜ – እሑድ",
   "contact.directions": "አቅጣጫ ያግኙ",
 
   "nav.gallery": "ማዕከለ ምስል",
@@ -224,8 +224,8 @@ window.SELAM_AM = {
   "pkg.4c": "ሳምንታዊ ወይም ዕለታዊ መደበኛ ትዕዛዝ",
   "pkg.4cta": "የዋጋ ጥያቄ ይላኩ",
   "opt.pkg.meat": "የሥጋ አቅርቦት (ለሆቴሎችና ለሱፐርማርኬቶች)",
-  "hours.t1": "ከ08:00 እስከ 22:00",
-  "hours.t2": "ከ08:00 እስከ 23:00",
+  "hours.t1": "08:00 – 22:00",
+  "hours.t2": "08:00 – 23:00",
   "footer.tag": "ከ1983 ዓ.ም. ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።"
 };
 
@@ -245,14 +245,14 @@ window.SELAM_EN_EXTRA = {
   "d.oxtibs": "Ox meat sautéed with onion, jalapeño, rosemary and niter kibbeh. Served lebleb (lightly cooked) or well done.",
   "d.goattibs": "Tender goat sautéed with onion, green chilli and butter, brought sizzling to the table in a clay pan.",
   "d.dulet": "Finely chopped tripe, liver and lean meat with onion, mitmita and spiced butter. Served raw, lebleb or cooked.",
-  "d.zilzil": "Strips of beef pan-seared with awaze and fresh herbs. Smoky, juicy and made for sharing.",
+  "d.zilzil": "Strips of beef seared with awaze and fresh herbs. Smoky, juicy and made for sharing.",
   "d.platter": "Our grand sharing mesob: tire siga, ox and goat tibs and dulet with vegetarian sides.",
   "d.beyaynetu": "A colourful sampler of our fasting dishes: shiro, misir, gomen, atkilt and fresh salad.",
   "d.shiro": "Velvety ground chickpea stew with garlic and berbere, served bubbling in a clay pot.",
   "d.misir": "Red lentils cooked down with onions, garlic and berbere until rich and silky.",
   "d.gomen": "Collard greens braised with garlic, ginger and green chilli.",
   "d.atkilt": "Cabbage, carrots and potatoes gently stewed with turmeric and onion.",
-  "d.ayib": "Fresh house-made cottage cheese with chopped greens and spiced butter.",
+  "d.ayib": "Fresh homemade cottage cheese with chopped greens and spiced butter.",
   "d.buna": "Green beans roasted at your table, ground by hand and brewed in a clay jebena, served in three rounds with popcorn and incense.",
   "d.tej": "Traditional honey wine, golden and gently sweet, served in a berele.",
   "d.beer": "Local and imported beers, served ice cold.",
