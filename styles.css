@@ -545,3 +545,114 @@ html[lang="am"] .page-hero-am { display: none; }
   .g-item.wide { grid-column: span 2; }
   .dish-thumb { width: 60px; height: 60px; }
 }
+
+/* ================= Light-brown traditional palette ================= */
+/* Tones drawn from chika (mud-plaster) walls, injera, mesob straw and clay jebena */
+:root {
+  --bg: #ead9bd;        /* chika wall */
+  --bg-2: #e0c8a2;      /* mesob straw */
+  --bg-3: #d4b68b;      /* sun-dried clay */
+  --paper: #f6ecdc;     /* injera */
+  --clay: #8a5a35;      /* clay jebena */
+  --earth: #6b4426;     /* deep earth */
+  --ink: #3a2414;
+  --muted: #7d5f45;
+}
+body { background: var(--bg); color: var(--ink); }
+
+/* Woven mesob texture used on main backgrounds */
+.hero, .dining, .catering, .home-cards, .gallery, .story, .contact {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cpath d='M0 14h28M14 0v28' stroke='%238a5a35' stroke-opacity='.035' stroke-width='5'/%3E%3C/svg%3E");
+}
+
+/* Tibeb border on brown instead of black */
+.tibeb {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Crect width='44' height='22' fill='%236b4426'/%3E%3Cpath d='M0 11 11 0 22 11 11 22z' fill='%23a8341f'/%3E%3Cpath d='M22 11 33 0 44 11 33 22z' fill='%23c9a14a'/%3E%3Cpath d='M7 11 11 7 15 11 11 15z' fill='%23f6ecdc'/%3E%3Cpath d='M29 11 33 7 37 11 33 15z' fill='%233f6b2a'/%3E%3C/svg%3E") repeat-x center / auto 100%;
+}
+
+/* ---- Nav: light straw bar ---- */
+.nav, .nav.scrolled {
+  color: var(--ink);
+  background: rgba(234,217,189,.94);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(138,90,53,.25);
+}
+.nav { padding-block: 14px; }
+.brand-sub { color: var(--clay); }
+.nav-links a[aria-current="page"] { color: var(--berbere); }
+.lang-toggle { border-color: rgba(58,36,20,.3); }
+.lang-toggle button { color: var(--ink); }
+.lang-toggle button.active { background: var(--clay); color: var(--paper); }
+.burger span { background: var(--ink); }
+@media (max-width: 1240px) { .nav-links { background: rgba(234,217,189,.98); } }
+
+/* ---- Home hero ---- */
+.hero { background-color: var(--bg); color: var(--ink); }
+.hero-bg {
+  background:
+    radial-gradient(1000px 560px at 85% 40%, rgba(168,52,31,.16), transparent 60%),
+    radial-gradient(800px 500px at 5% 95%, rgba(201,161,74,.22), transparent 60%);
+}
+.hero .eyebrow { color: var(--berbere); }
+.hero-am { color: var(--berbere); }
+.hero-en { color: var(--ink); }
+.hero-lead { color: #5a3d26; }
+.hero .btn-ghost { color: var(--ink); border-color: rgba(58,36,20,.45); }
+.hero .btn-ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.hero-since { border-top-color: rgba(58,36,20,.2); }
+.since-num { color: var(--clay); }
+.since-label { color: var(--muted); }
+.hero-photo { border-color: var(--paper); box-shadow: 0 0 0 2px rgba(138,90,53,.45), 0 30px 60px rgba(107,68,38,.35); }
+
+/* ---- Inner page banners: warm brown overlay on photos ---- */
+.page-hero {
+  background:
+    linear-gradient(180deg, rgba(107,68,38,.35), rgba(70,42,22,.78)),
+    var(--img) center / cover no-repeat,
+    linear-gradient(150deg, var(--clay), var(--earth));
+}
+.page-hero-inner { padding-top: 130px; }
+
+/* ---- Section backgrounds ---- */
+.story { background-color: var(--bg); }
+.menu { background-color: var(--bg-2); }
+.home-cards, .gallery, .contact { background-color: var(--bg); }
+.card { background: var(--paper); }
+.story-copy p, .t-text, .dish p { color: #5a3d26; }
+.timeline li::before { background: var(--bg); }
+.stats, .stat + .stat { border-color: rgba(107,68,38,.22); }
+
+/* ---- Garden section ---- */
+.dining { background-color: var(--bg-3); color: var(--ink); }
+.dining::after { color: rgba(107,68,38,.08); }
+.dining .eyebrow { color: var(--berbere); }
+.dining-copy > p { color: #4e331f; }
+.features li { border-top-color: rgba(58,36,20,.18); }
+.f-ico { color: var(--berbere); }
+.features p { color: #5a3d26; }
+.dp { box-shadow: 0 24px 50px rgba(70,42,22,.35); }
+.dp2 { border-color: var(--bg-3); }
+
+/* ---- Catering ---- */
+.catering { background-color: var(--bg-2); color: var(--ink); }
+.catering .eyebrow { color: var(--berbere); }
+.section-head.light .section-lead { color: var(--muted); }
+.pkg { background: var(--paper); border-color: rgba(138,90,53,.25); box-shadow: 0 12px 30px rgba(107,68,38,.1); }
+.pkg:hover { border-color: var(--clay); }
+.pkg.featured { background: linear-gradient(160deg, #f3dcc8, var(--paper) 70%); border-color: var(--berbere); }
+.pkg-num { color: var(--clay); }
+.pkg-guests { color: var(--berbere); }
+.pkg li { color: #4e331f; border-top-color: rgba(58,36,20,.1); }
+.steps span { border-color: var(--clay); color: var(--clay); }
+.steps p { color: var(--muted); }
+.inquiry { background: var(--paper); box-shadow: 0 30px 60px rgba(107,68,38,.2); }
+
+/* ---- Contact ---- */
+.map { border-color: var(--paper); }
+
+/* ---- Footer: deep earth brown ---- */
+.footer { background: var(--earth); color: rgba(246,236,220,.8); }
+.footer-name { color: var(--paper); }
+.footer-addr, .footer-name span { color: #f0d08a; }
+.dp1 figcaption { color: var(--paper); }
