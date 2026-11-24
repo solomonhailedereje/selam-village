@@ -112,8 +112,7 @@ window.SELAM_AM = {
   "contact.email": "ኢሜይል",
   "hours.title": "የሥራ ሰዓት",
   "hours.wk": "ሰኞ – ዓርብ",
-  "hours.sat": "ቅዳሜ",
-  "hours.sun": "እሑድ",
+  "hours.sat": "ቅዳሜ – እሑድ",
   "contact.directions": "አቅጣጫ ያግኙ",
 
   "nav.gallery": "ማዕከለ ምስል",
