@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c9a14a'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%231a120d' font-family='serif'%3E%E1%88%B0%3C/text%3E%3C/svg%3E">
 </head>
-<body>
+<body class="page-index">
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <a href="#top" class="brand">
+  <a href="index.html" class="brand">
     <span class="brand-mark">ሰ</span>
     <span class="brand-text">
       <span class="brand-name">Selam Village</span>
@@ -23,19 +23,19 @@
     </span>
   </a>
   <nav class="nav-links" id="navLinks">
-    <a href="#story" data-i18n="nav.story">Our Story</a>
-    <a href="#menu" data-i18n="nav.menu">Menu</a>
-    <a href="#dining" data-i18n="nav.dining">Garden & Events</a>
-    <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
-    <a href="#catering" data-i18n="nav.catering">Catering</a>
-    <a href="#contact" data-i18n="nav.contact">Visit</a>
+    <a href="story.html" data-i18n="nav.story">Our Story</a>
+    <a href="menu.html" data-i18n="nav.menu">Menu</a>
+    <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
+    <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+    <a href="catering.html" data-i18n="nav.catering">Catering</a>
+    <a href="contact.html" data-i18n="nav.contact">Visit</a>
   </nav>
   <div class="nav-actions">
     <div class="lang-toggle" role="group" aria-label="Language">
       <button type="button" data-lang="en" class="active">EN</button>
       <button type="button" data-lang="am">አማ</button>
     </div>
-    <a href="#inquire" class="btn btn-small" data-i18n="nav.book">Book Catering</a>
+    <a href="catering.html#inquire" class="btn btn-small" data-i18n="nav.book">Book Catering</a>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
   </div>
 </header>
@@ -54,8 +54,8 @@
       </h1>
       <p class="hero-lead" data-i18n="hero.lead">Four decades of fresh tire siga, sizzling tibs, hand-made injera and the warmth of an Ethiopian home — served in our big, green garden. Gather around the mesob — you are family here.</p>
       <div class="hero-cta">
-        <a href="#menu" class="btn" data-i18n="hero.cta1">Explore the Menu</a>
-        <a href="#catering" class="btn btn-ghost" data-i18n="hero.cta2">Plan an Event</a>
+        <a href="menu.html" class="btn" data-i18n="hero.cta1">Explore the Menu</a>
+        <a href="catering.html" class="btn btn-ghost" data-i18n="hero.cta2">Plan an Event</a>
       </div>
       <div class="hero-since">
         <span class="since-num">1983</span>
@@ -63,33 +63,7 @@
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <!-- Injera platter illustration -->
-      <svg viewBox="0 0 400 400" class="platter">
-        <defs>
-          <pattern id="injera" width="14" height="14" patternUnits="userSpaceOnUse">
-            <rect width="14" height="14" fill="#e6d3b3"/>
-            <circle cx="4" cy="4" r="1.6" fill="#cdb58e"/>
-            <circle cx="11" cy="9" r="1.2" fill="#d4bd98"/>
-            <circle cx="6" cy="12" r=".9" fill="#c9ae84"/>
-          </pattern>
-          <radialGradient id="shade" cx="50%" cy="45%" r="55%">
-            <stop offset="70%" stop-color="#000" stop-opacity="0"/>
-            <stop offset="100%" stop-color="#000" stop-opacity=".25"/>
-          </radialGradient>
-        </defs>
-        <circle cx="200" cy="200" r="196" fill="#2a1d15"/>
-        <circle cx="200" cy="200" r="186" fill="none" stroke="#c9a14a" stroke-width="2" stroke-dasharray="2 8"/>
-        <circle cx="200" cy="200" r="172" fill="url(#injera)"/>
-        <circle cx="200" cy="200" r="172" fill="url(#shade)"/>
-        <!-- stews -->
-        <g class="stew"><circle cx="200" cy="200" r="44" fill="#7a2614"/><circle cx="192" cy="192" r="10" fill="#f1e6cf"/><circle cx="214" cy="210" r="7" fill="#5a1a0c"/></g>
-        <g class="stew"><circle cx="200" cy="92" r="34" fill="#c9721f"/><circle cx="190" cy="88" r="4" fill="#e9a54b"/><circle cx="208" cy="98" r="3" fill="#e9a54b"/></g>
-        <g class="stew"><circle cx="296" cy="150" r="32" fill="#3f6b2a"/><path d="M280 140q16-10 30 4M284 160q14-8 26 2" stroke="#6c9b3e" stroke-width="3" fill="none"/></g>
-        <g class="stew"><circle cx="292" cy="258" r="32" fill="#e2b33c"/><circle cx="284" cy="252" r="4" fill="#f3d47a"/><circle cx="300" cy="264" r="3" fill="#f3d47a"/></g>
-        <g class="stew"><circle cx="200" cy="310" r="33" fill="#9b3a1c"/><rect x="186" y="298" width="10" height="8" rx="2" fill="#5c2410"/><rect x="204" y="312" width="12" height="8" rx="2" fill="#5c2410"/></g>
-        <g class="stew"><circle cx="106" cy="258" r="32" fill="#b7552a"/><circle cx="100" cy="252" r="5" fill="#d98b52"/></g>
-        <g class="stew"><circle cx="104" cy="150" r="32" fill="#efe4cf"/><circle cx="96" cy="146" r="3" fill="#7d9a4a"/><circle cx="112" cy="156" r="3" fill="#c33"/></g>
-      </svg>
+      <div class="hero-photo"><img src="images/photos/hero-platter.jpg" alt="A shared Ethiopian platter on injera"></div>
       <div class="hero-badge">
         <span class="badge-top" data-i18n="hero.badgeTop">Since</span>
         <span class="badge-year">1983</span>
@@ -99,7 +73,6 @@
   </div>
   <div class="tibeb" aria-hidden="true"></div>
 </section>
-
 <!-- ============ MARQUEE ============ -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
@@ -107,240 +80,37 @@
     <span>Tire Siga</span><i>✦</i><span>ጥብስ</span><i>✦</i><span>Dulet</span><i>✦</i><span>በያይነቱ</span><i>✦</i><span>Goat Tibs</span><i>✦</i><span>ቡና</span><i>✦</i><span>Tej</span><i>✦</i><span>ጥሬ ሥጋ</span><i>✦</i><span>Tibs</span><i>✦</i><span>ዱለት</span><i>✦</i><span>Beyaynetu</span><i>✦</i><span>የፍየል ጥብስ</span><i>✦</i><span>Garden</span><i>✦</i><span>ጠጅ</span><i>✦</i>
   </div>
 </div>
-
-<!-- ============ STORY ============ -->
-<section class="section story" id="story">
-  <div class="container story-grid">
-    <div class="story-copy reveal">
-      <p class="eyebrow" data-i18n="story.eyebrow">Our Story</p>
-      <h2 data-i18n="story.title">A village table, set since 1983</h2>
-      <p data-i18n="story.p1">Selam Village began with a simple promise: to cook the way our mothers and grandmothers did — patiently, generously, and with the freshest spices we could find. "Selam" means peace, and for more than forty years our home has been a place of peace, conversation and shared plates.</p>
-      <p data-i18n="story.p2">Our berbere is still blended in-house, our niter kibbeh still clarified slowly, and our injera still fermented the traditional way from teff. What has grown is our family — the guests, weddings and celebrations we have had the honour of feeding across generations.</p>
-      <blockquote class="pull" data-i18n="story.quote">"Food eaten together from one plate makes one family."</blockquote>
-    </div>
-    <ol class="timeline reveal">
-      <li><span class="t-year">1983</span><span class="t-text" data-i18n="tl.1">Selam Village opens its doors with a small kitchen and a handful of tables.</span></li>
-      <li><span class="t-year">1990s</span><span class="t-text" data-i18n="tl.2">Word spreads — we begin catering weddings, holidays and community gatherings.</span></li>
-      <li><span class="t-year">2000s</span><span class="t-text" data-i18n="tl.3">A larger dining room and our signature traditional coffee ceremony.</span></li>
-      <li><span class="t-year">Today</span><span class="t-text" data-i18n="tl.4">A second generation carries the recipes forward — from intimate dinners to events of hundreds.</span></li>
-    </ol>
-  </div>
-  <div class="container stats reveal">
-    <div class="stat"><span class="stat-num" data-count="40">40+</span><span class="stat-label" data-i18n="stat.1">Years of tradition</span></div>
-    <div class="stat"><span class="stat-num">2</span><span class="stat-label" data-i18n="stat.2">Ox & goat, fresh daily</span></div>
-    <div class="stat"><span class="stat-num">500+</span><span class="stat-label" data-i18n="stat.3">Guests catered per event</span></div>
-    <div class="stat"><span class="stat-num">3</span><span class="stat-label" data-i18n="stat.4">Generations of recipes</span></div>
-  </div>
-</section>
-
-<!-- ============ MENU ============ -->
-<section class="section menu" id="menu">
+<section class="section home-cards">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow" data-i18n="menu.eyebrow">The Menu</p>
-      <h2 data-i18n="menu.title">From our kitchen to your mesob</h2>
-      <p class="section-lead" data-i18n="menu.lead">Every dish is served on fresh injera to share. Ask your server about spice levels — we're happy to make it milder or hotter.</p>
+      <p class="eyebrow" data-i18n="home.eyebrow">Welcome</p>
+      <h2 data-i18n="home.title">Everything Selam Village, one step away</h2>
     </div>
-
-    <div class="tabs reveal" role="tablist">
-      <button class="tab active" data-tab="meat" role="tab" data-i18n="tab.meat">Ox & Goat</button>
-      <button class="tab" data-tab="veg" role="tab" data-i18n="tab.veg">Vegetarian & Vegan</button>
-      <button class="tab" data-tab="bar" role="tab" data-i18n="tab.bar">Bar & Coffee</button>
-    </div>
-
-    <div class="menu-panel active" data-panel="meat">
-      <article class="dish"><div class="dish-head"><h3>Tire Siga <span class="am">ጥሬ ሥጋ</span></h3><span class="tag hot" data-i18n="tag.signature"></span></div><p data-i18n="d.tire"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Ox Tibs <span class="am">የበሬ ጥብስ</span></h3><span class="tag " data-i18n="tag.chef"></span></div><p data-i18n="d.oxtibs"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Goat Tibs <span class="am">የፍየል ጥብስ</span></h3></div><p data-i18n="d.goattibs"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Dulet <span class="am">ዱለት</span></h3><span class="tag hot" data-i18n="tag.spicy"></span></div><p data-i18n="d.dulet"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Zilzil Tibs <span class="am">ዝልዝል ጥብስ</span></h3></div><p data-i18n="d.zilzil"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Selam Village Mesob <span class="am">የሰላም ቪሌጅ ማዕድ</span></h3><span class="tag " data-i18n="tag.share"></span></div><p data-i18n="d.platter"></p></article>
-    </div>
-
-    <div class="menu-panel" data-panel="veg">
-      <article class="dish"><div class="dish-head"><h3>Beyaynetu <span class="am">በያይነቱ</span></h3><span class="tag veg" data-i18n="tag.vegan"></span></div><p data-i18n="d.beyaynetu"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Shiro <span class="am">ሽሮ</span></h3><span class="tag veg" data-i18n="tag.vegan"></span></div><p data-i18n="d.shiro"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Misir Wat <span class="am">ምስር ወጥ</span></h3><span class="tag veg" data-i18n="tag.vegan"></span></div><p data-i18n="d.misir"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Gomen <span class="am">ጎመን</span></h3><span class="tag veg" data-i18n="tag.vegan"></span></div><p data-i18n="d.gomen"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Atkilt <span class="am">አትክልት</span></h3><span class="tag veg" data-i18n="tag.vegan"></span></div><p data-i18n="d.atkilt"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Ayib be Gomen <span class="am">አይብ በጎመን</span></h3><span class="tag veg" data-i18n="tag.vegetarian"></span></div><p data-i18n="d.ayib"></p></article>
-    </div>
-
-    <div class="menu-panel" data-panel="bar">
-      <article class="dish"><div class="dish-head"><h3>Buna Ceremony <span class="am">የቡና ሥነ ሥርዓት</span></h3><span class="tag " data-i18n="tag.ritual"></span></div><p data-i18n="d.buna"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Tej <span class="am">ጠጅ</span></h3></div><p data-i18n="d.tej"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Beer <span class="am">ቢራ</span></h3></div><p data-i18n="d.beer"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Wine <span class="am">ወይን</span></h3></div><p data-i18n="d.wine"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Spirits & Whisky <span class="am">አረቄና ውስኪ</span></h3></div><p data-i18n="d.spirits"></p></article>
-      <article class="dish"><div class="dish-head"><h3>Soft Drinks & Juice <span class="am">ለስላሳ መጠጦችና ጭማቂ</span></h3></div><p data-i18n="d.soft"></p></article>
-    </div>
-
-    <p class="menu-note reveal" data-i18n="menu.note">Menu items and availability may vary by season. Please let us know about any allergies.</p>
-  </div>
-</section>
-
-<!-- ============ DINING ============ -->
-<section class="section dining" id="dining">
-  <div class="container dining-grid">
-    <div class="dining-art reveal" aria-hidden="true">
-      <!-- Jebena & cups -->
-      <svg viewBox="0 0 360 380">
-        <ellipse cx="180" cy="350" rx="150" ry="16" fill="#000" opacity=".25"/>
-        <path d="M60 330h240l-12 14H72z" fill="#5a3a24"/>
-        <rect x="56" y="318" width="248" height="14" rx="3" fill="#7a5032"/>
-        <!-- jebena -->
-        <path d="M180 120c-18 0-22 22-22 40 0 10-50 30-50 90 0 40 30 68 72 68s72-28 72-68c0-60-50-80-50-90 0-18-4-40-22-40z" fill="#2b1a10"/>
-        <path d="M150 250c0 30 14 52 30 52" stroke="#c9a14a" stroke-width="3" fill="none" opacity=".6"/>
-        <path d="M252 230c26-6 40-40 46-70" stroke="#2b1a10" stroke-width="12" stroke-linecap="round" fill="none"/>
-        <path d="M110 220c-24 0-30 40-8 52" stroke="#2b1a10" stroke-width="9" fill="none" stroke-linecap="round"/>
-        <rect x="166" y="108" width="28" height="14" rx="4" fill="#c9a14a"/>
-        <path d="M172 108c0-20 16-20 16 0" fill="#8a5a2b"/>
-        <!-- steam -->
-        <g class="steam" stroke="#f4ece1" stroke-width="3" fill="none" stroke-linecap="round" opacity=".55">
-          <path d="M300 140c-10-14 10-22 0-36"/>
-          <path d="M314 150c-10-14 10-22 0-36"/>
-        </g>
-        <!-- cups -->
-        <g fill="#f4ece1"><path d="M50 300h34l-4 18H54z"/><path d="M276 300h34l-4 18h-26z"/><path d="M90 300h34l-4 18H94z"/></g>
-        <g stroke="#a8341f" stroke-width="2"><path d="M52 306h30M278 306h30M92 306h30"/></g>
-      </svg>
-    </div>
-    <div class="dining-copy reveal">
-      <p class="eyebrow" data-i18n="dining.eyebrow">Garden & In-House Events</p>
-      <h2 data-i18n="dining.title">A big garden, made for gathering</h2>
-      <p data-i18n="dining.p1">In Ethiopia, a meal is never eaten alone. At Selam Village, plates of tibs and tire siga arrive at the centre of the table and everyone shares by hand — under the trees of our big garden or in our dining room. Our space is also open for your events: weddings, birthdays, graduations, holidays and company gatherings.</p>
-      <ul class="features">
-        <li><span class="f-ico">◈</span><div><strong data-i18n="f.1t">Our big garden</strong><p data-i18n="f.1d">Open-air tables among greenery — relaxed, family-friendly and perfect for long lunches.</p></div></li>
-        <li><span class="f-ico">◈</span><div><strong data-i18n="f.2t">Traditional coffee ceremony</strong><p data-i18n="f.2d">Roasted, ground and brewed before your eyes, with frankincense in the air.</p></div></li>
-        <li><span class="f-ico">◈</span><div><strong data-i18n="f.3t">In-house events</strong><p data-i18n="f.3d">Host your wedding, birthday, graduation or company party in our garden and hall — we handle the food, drinks and service.</p></div></li>
-      </ul>
-      <a href="#inquire" class="btn" data-i18n="dining.cta">Book Your Event</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ GALLERY ============ -->
-<section class="section gallery" id="gallery">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow" data-i18n="gal.eyebrow">Gallery</p>
-      <h2 data-i18n="gal.title">A taste of Selam Village</h2>
-    </div>
-    <div class="gallery-grid">
-      <figure class="g-item g1 reveal"><img src="images/gallery-1.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption data-i18n="gal.1"></figcaption></figure>
-      <figure class="g-item g2 reveal"><img src="images/gallery-2.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption data-i18n="gal.2"></figcaption></figure>
-      <figure class="g-item g3 reveal"><img src="images/gallery-3.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption data-i18n="gal.3"></figcaption></figure>
-      <figure class="g-item g4 reveal"><img src="images/gallery-4.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption data-i18n="gal.4"></figcaption></figure>
-      <figure class="g-item g5 reveal"><img src="images/gallery-5.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption data-i18n="gal.5"></figcaption></figure>
-      <figure class="g-item g6 reveal"><img src="images/gallery-6.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption data-i18n="gal.6"></figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CATERING ============ -->
-<section class="section catering" id="catering">
-  <div class="container">
-    <div class="section-head light reveal">
-      <p class="eyebrow" data-i18n="cat.eyebrow">Catering</p>
-      <h2 data-i18n="cat.title">Events at our place — or catering at yours</h2>
-      <p class="section-lead" data-i18n="cat.lead">Celebrate in our garden and hall, or let us bring Selam Village to you. From a family melse to a wedding of five hundred, we serve with the same care as our dining room — with traditional serving, staff in habesha attire, a full bar and an optional coffee ceremony.</p>
-    </div>
-
-    <div class="packages">
-      <article class="pkg reveal">
-        <span class="pkg-num">01</span>
-        <h3 data-i18n="pkg.1t">In-House Events</h3>
-        <p class="pkg-guests" data-i18n="pkg.1g">At Selam Village · garden & hall</p>
-        <ul>
-          <li data-i18n="pkg.1a">Reserved garden or hall space</li>
-          <li data-i18n="pkg.1b">Tibs, tire siga & vegetarian spread</li>
-          <li data-i18n="pkg.1c">Full bar & coffee ceremony</li>
-        </ul>
-      </article>
-      <article class="pkg featured reveal">
-        <span class="pkg-ribbon" data-i18n="pkg.popular">Most requested</span>
-        <span class="pkg-num">02</span>
-        <h3 data-i18n="pkg.2t">Weddings & Celebrations</h3>
-        <p class="pkg-guests" data-i18n="pkg.2g">50 – 500+ guests</p>
-        <ul>
-          <li data-i18n="pkg.2a">Full custom menu & tasting</li>
-          <li data-i18n="pkg.2b">On-site cooking, serving & staff</li>
-          <li data-i18n="pkg.2c">Traditional mesob & buffet setup</li>
-          <li data-i18n="pkg.2d">Coffee ceremony, tej & bar service</li>
-        </ul>
-      </article>
-      <article class="pkg reveal">
-        <span class="pkg-num">03</span>
-        <h3 data-i18n="pkg.3t">Corporate & Community</h3>
-        <p class="pkg-guests" data-i18n="pkg.3g">20 – 300 guests</p>
-        <ul>
-          <li data-i18n="pkg.3a">Buffet or boxed lunches</li>
-          <li data-i18n="pkg.3b">Clearly labelled vegan & fasting options</li>
-          <li data-i18n="pkg.3c">Setup and cleanup included</li>
-        </ul>
-      </article>
-    </div>
-
-    <ol class="steps reveal">
-      <li><span>1</span><strong data-i18n="step.1t">Tell us about your event</strong><p data-i18n="step.1d">Date, guest count and the occasion.</p></li>
-      <li><span>2</span><strong data-i18n="step.2t">Design your menu</strong><p data-i18n="step.2d">We'll suggest dishes and arrange a tasting.</p></li>
-      <li><span>3</span><strong data-i18n="step.3t">Celebrate</strong><p data-i18n="step.3d">We cook, serve and take care of the rest.</p></li>
-    </ol>
-
-    <form class="inquiry reveal" id="inquire" novalidate>
-      <h3 data-i18n="form.title">Catering inquiry</h3>
-      <div class="form-grid">
-        <label><span data-i18n="form.name">Full name</span><input name="name" required autocomplete="name"></label>
-        <label><span data-i18n="form.phone">Phone</span><input name="phone" type="tel" required autocomplete="tel"></label>
-        <label><span data-i18n="form.email">Email</span><input name="email" type="email" autocomplete="email"></label>
-        <label><span data-i18n="form.date">Event date</span><input name="date" type="date" required></label>
-        <label><span data-i18n="form.guests">Number of guests</span><input name="guests" type="number" min="1" required></label>
-        <label><span data-i18n="form.where">Where?</span>
-          <select name="where">
-            <option data-i18n="opt.here">At Selam Village (garden / hall)</option>
-            <option data-i18n="opt.there">Catering at my venue</option>
-          </select>
-        </label>
-        <label><span data-i18n="form.type">Event type</span>
-          <select name="type">
-            <option data-i18n="opt.wedding">Wedding</option>
-            <option data-i18n="opt.family">Birthday / family gathering</option>
-            <option data-i18n="opt.grad">Graduation</option>
-            <option data-i18n="opt.holiday">Holiday (Genna, Fasika, Meskel…)</option>
-            <option data-i18n="opt.corporate">Corporate</option>
-            <option data-i18n="opt.other">Other</option>
-          </select>
-        </label>
-        <label class="full"><span data-i18n="form.msg">Tell us more</span><textarea name="msg" rows="4"></textarea></label>
-      </div>
-      <button class="btn" type="submit" data-i18n="form.submit">Send Inquiry</button>
-      <p class="form-status" id="formStatus" role="status"></p>
-    </form>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section contact" id="contact">
-  <div class="container contact-grid">
-    <div class="contact-copy reveal">
-      <p class="eyebrow" data-i18n="contact.eyebrow">Visit Us</p>
-      <h2 data-i18n="contact.title">Come as a guest, leave as family</h2>
-      <dl class="info">
-        <div><dt data-i18n="contact.addr">Address</dt><dd data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</dd></div>
-        <div><dt data-i18n="contact.phone">Phone</dt><dd><a href="tel:+000000000">[+000 000 0000]</a></dd></div>
-        <div><dt data-i18n="contact.email">Email</dt><dd><a href="mailto:info@selamvillage.com">info@selamvillage.com</a></dd></div>
-      </dl>
-      <h3 class="hours-title" data-i18n="hours.title">Opening hours</h3>
-      <ul class="hours">
-        <li><span data-i18n="hours.wk">Monday – Friday</span><span>08:00 – 22:00</span></li>
-        <li><span data-i18n="hours.sat">Saturday – Sunday</span><span>08:00 – 23:00</span></li>
-      </ul>
-      <a class="btn btn-ghost-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Addis+Ababa+Restaurant+Giorgis+Addis+Ababa" data-i18n="contact.directions">Get Directions</a>
-    </div>
-    <div class="map reveal">
-      <iframe title="Selam Village on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Addis+Ababa+Restaurant,+Giorgis,+Addis+Ababa&z=17&output=embed"></iframe>
+    <div class="cards">
+      <a class="card reveal" href="menu.html">
+        <span class="card-img"><img src="images/photos/tibs.jpg" alt="" loading="lazy"></span>
+        <span class="card-body"><strong data-i18n="nav.menu">Menu</strong><span data-i18n="card.menu">Tire siga, ox & goat tibs, dulet, vegetarian dishes and a full bar.</span><span class="card-arrow">→</span></span>
+      </a>
+      <a class="card reveal" href="garden.html">
+        <span class="card-img"><img src="images/photos/veg-sampler.jpg" alt="" loading="lazy"></span>
+        <span class="card-body"><strong data-i18n="nav.dining">Garden & Events</strong><span data-i18n="card.garden">Dine under the trees in our big garden — or host your event with us.</span><span class="card-arrow">→</span></span>
+      </a>
+      <a class="card reveal" href="catering.html">
+        <span class="card-img"><img src="images/photos/hero-platter.jpg" alt="" loading="lazy"></span>
+        <span class="card-body"><strong data-i18n="nav.catering">Catering</strong><span data-i18n="card.catering">Weddings, holidays and company events, at our place or yours.</span><span class="card-arrow">→</span></span>
+      </a>
+      <a class="card reveal" href="story.html">
+        <span class="card-img"><img src="images/photos/injera-making.jpg" alt="" loading="lazy"></span>
+        <span class="card-body"><strong data-i18n="nav.story">Our Story</strong><span data-i18n="card.story">Four decades of Ethiopian hospitality since 1983.</span><span class="card-arrow">→</span></span>
+      </a>
+      <a class="card reveal" href="gallery.html">
+        <span class="card-img"><img src="images/photos/coffee-ceremony.jpg" alt="" loading="lazy"></span>
+        <span class="card-body"><strong data-i18n="nav.gallery">Gallery</strong><span data-i18n="card.gallery">A look at the food, the coffee and the table.</span><span class="card-arrow">→</span></span>
+      </a>
+      <a class="card reveal" href="contact.html">
+        <span class="card-img"><img src="images/photos/beyaynetu.jpg" alt="" loading="lazy"></span>
+        <span class="card-body"><strong data-i18n="nav.contact">Visit</strong><span data-i18n="card.visit">Giorgis, next to Addis Ababa Restaurant. Open daily from 08:00.</span><span class="card-arrow">→</span></span>
+      </a>
     </div>
   </div>
 </section>
@@ -358,10 +128,12 @@
       <p class="footer-addr" data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</p>
     </div>
     <nav class="footer-links">
-      <a href="#story" data-i18n="nav.story">Our Story</a>
-      <a href="#menu" data-i18n="nav.menu">Menu</a>
-      <a href="#catering" data-i18n="nav.catering">Catering</a>
-      <a href="#contact" data-i18n="nav.contact">Visit</a>
+      <a href="story.html" data-i18n="nav.story">Our Story</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="catering.html" data-i18n="nav.catering">Catering</a>
+      <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="contact.html" data-i18n="nav.contact">Visit</a>
     </nav>
   </div>
 </footer>

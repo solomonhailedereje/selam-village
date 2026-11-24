@@ -1,14 +1,9 @@
-# Gallery photos
+# Images
 
-Drop photos here with these exact names (JPG, ~1600px wide). Any missing photo shows a patterned tile with its caption instead.
+## `photos/`
+Ethiopian food photos from Wikimedia Commons under free licences (CC0, CC BY, CC BY-SA).
+Authors and licences are listed in **Photo credits** at the bottom of `gallery.html`. Keep that list if you keep the photos.
 
-| File | Caption |
-|---|---|
-| gallery-1.jpg | Our garden (large tile) |
-| gallery-2.jpg | Tire siga |
-| gallery-3.jpg | Tibs |
-| gallery-4.jpg | Coffee ceremony (tall tile) |
-| gallery-5.jpg | Beyaynetu |
-| gallery-6.jpg | Events at Selam Village (wide tile) |
-
-Optional: `hero.jpg` is not used yet — ask to add a photo hero.
+## Add your own photos
+- `garden.jpg`: a photo of the Selam Village garden. It appears automatically as the Garden & Events page banner and in the garden tile; until it exists a green pattern shows.
+- To swap any food photo for one of the restaurant's own, overwrite the file in `photos/` with the same name (and remove its line from the credits in `gallery.html`).

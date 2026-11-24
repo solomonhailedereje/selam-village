@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu · Selam Village</title>
+  <meta name="description" content="Selam Village — authentic Ethiopian cuisine, dine-in and full-service catering since 1983. Tire siga, ox &amp; goat tibs, dulet, vegetarian dishes, a full bar, a big garden and in-house events in Giorgis, Addis Ababa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Ethiopic:wght@300;400;500;600&family=Noto+Serif+Ethiopic:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c9a14a'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%231a120d' font-family='serif'%3E%E1%88%B0%3C/text%3E%3C/svg%3E">
+</head>
+<body class="page-menu">
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">ሰ</span>
+    <span class="brand-text">
+      <span class="brand-name">Selam Village</span>
+      <span class="brand-sub" data-i18n="brand.sub">Est. 1983</span>
+    </span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="story.html" data-i18n="nav.story">Our Story</a>
+    <a href="menu.html" data-i18n="nav.menu" aria-current="page">Menu</a>
+    <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
+    <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+    <a href="catering.html" data-i18n="nav.catering">Catering</a>
+    <a href="contact.html" data-i18n="nav.contact">Visit</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="am">አማ</button>
+    </div>
+    <a href="catering.html#inquire" class="btn btn-small" data-i18n="nav.book">Book Catering</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="page-hero" style="--img:url('images/photos/tibs.jpg')">
+  <div class="container page-hero-inner">
+    <p class="page-hero-am">ምግብ ዝርዝር</p>
+    <h1 data-i18n="nav.menu">Menu</h1>
+  </div>
+  <div class="tibeb" aria-hidden="true"></div>
+</section>
+<!-- ============ MENU ============ -->
+<section class="section menu" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="menu.eyebrow">The Menu</p>
+      <h2 data-i18n="menu.title">From our kitchen to your mesob</h2>
+      <p class="section-lead" data-i18n="menu.lead">Every dish is served on fresh injera to share. Ask your server about spice levels — we're happy to make it milder or hotter.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active" data-tab="meat" role="tab" data-i18n="tab.meat">Ox & Goat</button>
+      <button class="tab" data-tab="veg" role="tab" data-i18n="tab.veg">Vegetarian & Vegan</button>
+      <button class="tab" data-tab="bar" role="tab" data-i18n="tab.bar">Bar & Coffee</button>
+    </div>
+
+    <div class="menu-panel active" data-panel="meat">
+      <figure class="panel-img"><img src="images/photos/tibs.jpg" alt="Tibs" loading="lazy"></figure>
+      <div class="panel-dishes">
+      <article class="dish has-thumb"><img class="dish-thumb" src="images/photos/tire-siga.jpg" alt="" loading="lazy"><div class="dish-text"><div class="dish-head"><h3>Tire Siga <span class="am">ጥሬ ሥጋ</span></h3><span class="tag hot" data-i18n="tag.signature">Signature</span></div><p data-i18n="d.tire">Fresh, carefully selected raw beef, served with mitmita, awaze and senafich — our house speciality.</p></div></article>
+      <article class="dish"><div class="dish-head"><h3>Ox Tibs <span class="am">የበሬ ጥብስ</span></h3><span class="tag " data-i18n="tag.chef">Chef's pick</span></div><p data-i18n="d.oxtibs">Ox meat sautéed with onion, jalapeño, rosemary and niter kibbeh — lebleb (lightly cooked) or well done.</p></article>
+      <article class="dish has-thumb"><img class="dish-thumb" src="images/photos/mutton-tibs.jpg" alt="" loading="lazy"><div class="dish-text"><div class="dish-head"><h3>Goat Tibs <span class="am">የፍየል ጥብስ</span></h3></div><p data-i18n="d.goattibs">Tender goat sautéed with onion, green chilli and butter, brought sizzling to the table in a clay pan.</p></div></article>
+      <article class="dish"><div class="dish-head"><h3>Dulet <span class="am">ዱለት</span></h3><span class="tag hot" data-i18n="tag.spicy">Spicy</span></div><p data-i18n="d.dulet">Finely chopped tripe, liver and lean meat with onion, mitmita and spiced butter — raw, lebleb or cooked.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Zilzil Tibs <span class="am">ዝልዝል ጥብስ</span></h3></div><p data-i18n="d.zilzil">Strips of beef pan-seared with awaze and fresh herbs — smoky, juicy and made for sharing.</p></article>
+      <article class="dish has-thumb"><img class="dish-thumb" src="images/photos/hero-platter.jpg" alt="" loading="lazy"><div class="dish-text"><div class="dish-head"><h3>Selam Village Mesob <span class="am">የሰላም ቪሌጅ ማዕድ</span></h3><span class="tag " data-i18n="tag.share">For 2–4</span></div><p data-i18n="d.platter">Our grand sharing mesob: tire siga, ox and goat tibs and dulet with vegetarian sides.</p></div></article>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="veg">
+      <figure class="panel-img"><img src="images/photos/beyaynetu.jpg" alt="Beyaynetu" loading="lazy"></figure>
+      <div class="panel-dishes">
+      <article class="dish has-thumb"><img class="dish-thumb" src="images/photos/fasting-platter.jpg" alt="" loading="lazy"><div class="dish-text"><div class="dish-head"><h3>Beyaynetu <span class="am">በያይነቱ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.beyaynetu">A colourful sampler of our fasting dishes — shiro, misir, gomen, atkilt and fresh salad.</p></div></article>
+      <article class="dish"><div class="dish-head"><h3>Shiro <span class="am">ሽሮ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.shiro">Velvety ground chickpea stew with garlic and berbere, served bubbling in a clay pot.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Misir Wat <span class="am">ምስር ወጥ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.misir">Red lentils cooked down with onions, garlic and berbere until rich and silky.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Gomen <span class="am">ጎመን</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.gomen">Collard greens braised with garlic, ginger and green chilli.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Atkilt <span class="am">አትክልት</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.atkilt">Cabbage, carrots and potatoes gently stewed with turmeric and onion.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Ayib be Gomen <span class="am">አይብ በጎመን</span></h3><span class="tag veg" data-i18n="tag.vegetarian">Vegetarian</span></div><p data-i18n="d.ayib">Fresh house-made cottage cheese with chopped greens and spiced butter.</p></article>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="bar">
+      <figure class="panel-img"><img src="images/photos/coffee-ceremony.jpg" alt="Ethiopian coffee" loading="lazy"></figure>
+      <div class="panel-dishes">
+      <article class="dish has-thumb"><img class="dish-thumb" src="images/photos/jebena.jpg" alt="" loading="lazy"><div class="dish-text"><div class="dish-head"><h3>Buna Ceremony <span class="am">የቡና ሥነ ሥርዓት</span></h3><span class="tag " data-i18n="tag.ritual">Ritual</span></div><p data-i18n="d.buna">Green beans roasted at your table, ground by hand and brewed in a clay jebena — served in three rounds with popcorn and incense.</p></div></article>
+      <article class="dish has-thumb"><img class="dish-thumb" src="images/photos/tej.jpg" alt="" loading="lazy"><div class="dish-text"><div class="dish-head"><h3>Tej <span class="am">ጠጅ</span></h3></div><p data-i18n="d.tej">Traditional honey wine, golden and gently sweet, served in a berele.</p></div></article>
+      <article class="dish"><div class="dish-head"><h3>Beer <span class="am">ቢራ</span></h3></div><p data-i18n="d.beer">Local and imported beers, served ice cold.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Wine <span class="am">ወይን</span></h3></div><p data-i18n="d.wine">A selection of Ethiopian and imported red and white wines.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Spirits & Whisky <span class="am">አረቄና ውስኪ</span></h3></div><p data-i18n="d.spirits">Whisky, gin, vodka, traditional areke and more.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Soft Drinks & Juice <span class="am">ለስላሳ መጠጦችና ጭማቂ</span></h3></div><p data-i18n="d.soft">Soft drinks, bottled water, fresh juices and layered spris.</p></article>
+      </div>
+    </div>
+
+    <p class="menu-note reveal" data-i18n="menu.note">Menu items and availability may vary by season. Please let us know about any allergies.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="tibeb" aria-hidden="true"></div>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark big">ሰ</span>
+      <p class="footer-name">Selam Village <span>ሰላም ቪሌጅ</span></p>
+      <p data-i18n="footer.tag">Authentic Ethiopian cuisine & catering since 1983.</p>
+      <p class="footer-addr" data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</p>
+    </div>
+    <nav class="footer-links">
+      <a href="story.html" data-i18n="nav.story">Our Story</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="catering.html" data-i18n="nav.catering">Catering</a>
+      <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="contact.html" data-i18n="nav.contact">Visit</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

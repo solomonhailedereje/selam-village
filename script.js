@@ -1,4 +1,5 @@
 (() => {
+  document.documentElement.classList.add("js");
   const CATERING_EMAIL = "info@selamvillage.com"; // TODO: replace with the real address
 
   /* ---------- Language ---------- */
@@ -62,7 +63,7 @@
   /* ---------- Catering form ---------- */
   const form = document.getElementById("inquire");
   const status = document.getElementById("formStatus");
-  form.addEventListener("submit", e => {
+  if (form) form.addEventListener("submit", e => {
     e.preventDefault();
     let ok = true;
     form.querySelectorAll("[required]").forEach(f => {
