@@ -1,6 +1,6 @@
 # Selam Village — ሰላም ቪሌጅ
 
-Website for **Selam Village**, a traditional Ethiopian restaurant and catering company established in 1983.
+Website for **Selam Village**, a traditional Ethiopian restaurant and catering company established in 1983 E.C. (1991 G.C.) as Selam Butchery & Grocery.
 
 - Bilingual: English / Amharic (toggle in the header, choice is remembered). In Amharic, years use the Ethiopian calendar and booking forms show an Ethiopian-calendar date picker (dates are converted to Gregorian in the email)
 - Location: Giorgis, next to Addis Ababa Restaurant, Addis Ababa

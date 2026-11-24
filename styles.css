@@ -385,3 +385,10 @@ html[lang="am"] .page-hero-am { display: none; }
 @media (max-width: 900px) { .page-rooms .packages { grid-template-columns: 1fr; } }
 /* Garden photo placeholder: plain tint (bed icon is only for rooms) */
 .dp1.empty { background: var(--accent-tint); }
+
+/* ================= One language at a time ================= */
+html[lang="am"] .lang-en { display: none !important; }
+html:not([lang="am"]) .lang-am { display: none !important; }
+.dish h3 .lang-am, .brand-name .lang-am, .footer-name .lang-am { font-family: var(--font-am); }
+html[lang="am"] .hero-am { font-size: inherit; font-weight: 700; opacity: 1; margin: 0; }
+.footer-name span { margin-left: 0; color: var(--ink); font-size: inherit; font-weight: 700; }
