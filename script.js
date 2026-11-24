@@ -4,7 +4,7 @@
   /* ---------- Language ---------- */
   const nodes = document.querySelectorAll("[data-i18n]");
   const EN = { ...window.SELAM_EN_EXTRA };
-  nodes.forEach(n => { EN[n.dataset.i18n] = n.textContent; });
+  nodes.forEach(n => { if (n.textContent.trim()) EN[n.dataset.i18n] = n.textContent; });
   const AM = window.SELAM_AM || {};
   let lang = "en";
 
@@ -18,7 +18,7 @@
       b.classList.toggle("active", b.dataset.lang === lang));
     try { localStorage.setItem("selam-lang", lang); } catch (_) {}
     const status = document.getElementById("formStatus");
-    if (status.dataset.key) status.textContent = t(status.dataset.key);
+    if (status && status.dataset.key) status.textContent = t(status.dataset.key);
   }
 
   document.querySelectorAll(".lang-toggle button").forEach(b =>
@@ -26,7 +26,7 @@
 
   let saved = null;
   try { saved = localStorage.getItem("selam-lang"); } catch (_) {}
-  if (saved === "am") setLang("am");
+  setLang(saved === "am" ? "am" : "en");
 
   /* ---------- Nav ---------- */
   const nav = document.getElementById("nav");
