@@ -171,8 +171,8 @@
         const label = el.closest("label")?.querySelector("span")?.textContent.trim() || el.name;
         lines.push(el.tagName === "TEXTAREA" ? `\n${label}:\n${el.value}` : `${label}: ${valueOf(el)}`);
       });
-      const subject = (form.dataset.subject || "Booking request") + " — " +
-        (form.dataset.subjectFields || "").split(",").filter(Boolean).map(n => valueOf(form.elements[n])).join(" — ");
+      const subject = (form.dataset.subject || "Booking request") + " | " +
+        (form.dataset.subjectFields || "").split(",").filter(Boolean).map(n => valueOf(form.elements[n])).join(" | ");
       window.location.href = `mailto:${BOOKING_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
     });
   });
