@@ -9,10 +9,9 @@ Website for **Selam Village**, a traditional Ethiopian restaurant and catering c
 - Pure HTML/CSS/JS — no build step. Open `index.html` or host on GitHub Pages.
 
 ## Before going live — replace placeholders
-- Phone number in `index.html` (Visit section)
+- Phone number in `contact.html`
 - A real garden photo at `images/garden.jpg` (see `images/README.md`)
-- `CATERING_EMAIL` in `script.js` and the email link in `index.html`
-
+- `CATERING_EMAIL` in `script.js` and the email link in `contact.html`
 - Google Maps embed currently points to Addis Ababa Restaurant, Giorgis — swap for Selam Village's own pin once listed
 
 ## Files
