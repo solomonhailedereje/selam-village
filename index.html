@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selam Village · Ethiopian Restaurant & Catering since 1983</title>
+  <meta name="description" content="Selam Village — authentic Ethiopian cuisine, dine-in and full-service catering since 1983. Injera, wats, tibs, kitfo and the traditional coffee ceremony.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Ethiopic:wght@300;400;500;600&family=Noto+Serif+Ethiopic:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c9a14a'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%231a120d' font-family='serif'%3E%E1%88%B0%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand">
+    <span class="brand-mark">ሰ</span>
+    <span class="brand-text">
+      <span class="brand-name">Selam Village</span>
+      <span class="brand-sub" data-i18n="brand.sub">Est. 1983</span>
+    </span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#story" data-i18n="nav.story">Our Story</a>
+    <a href="#menu" data-i18n="nav.menu">Menu</a>
+    <a href="#dining" data-i18n="nav.dining">Dine With Us</a>
+    <a href="#catering" data-i18n="nav.catering">Catering</a>
+    <a href="#contact" data-i18n="nav.contact">Visit</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="am">አማ</button>
+    </div>
+    <a href="#inquire" class="btn btn-small" data-i18n="nav.book">Book Catering</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Ethiopian Kitchen · Dine-In · Catering</p>
+      <h1>
+        <span class="hero-am">ሰላም ቪሌጅ</span>
+        <span class="hero-en">Selam Village</span>
+      </h1>
+      <p class="hero-lead" data-i18n="hero.lead">Four decades of slow-simmered wats, hand-poured injera and the warmth of an Ethiopian home. Gather around the mesob — you are family here.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn" data-i18n="hero.cta1">Explore the Menu</a>
+        <a href="#catering" class="btn btn-ghost" data-i18n="hero.cta2">Plan an Event</a>
+      </div>
+      <div class="hero-since">
+        <span class="since-num">1983</span>
+        <span class="since-label" data-i18n="hero.since">Serving our community for over 40 years</span>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <!-- Injera platter illustration -->
+      <svg viewBox="0 0 400 400" class="platter">
+        <defs>
+          <pattern id="injera" width="14" height="14" patternUnits="userSpaceOnUse">
+            <rect width="14" height="14" fill="#e6d3b3"/>
+            <circle cx="4" cy="4" r="1.6" fill="#cdb58e"/>
+            <circle cx="11" cy="9" r="1.2" fill="#d4bd98"/>
+            <circle cx="6" cy="12" r=".9" fill="#c9ae84"/>
+          </pattern>
+          <radialGradient id="shade" cx="50%" cy="45%" r="55%">
+            <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#000" stop-opacity=".25"/>
+          </radialGradient>
+        </defs>
+        <circle cx="200" cy="200" r="196" fill="#2a1d15"/>
+        <circle cx="200" cy="200" r="186" fill="none" stroke="#c9a14a" stroke-width="2" stroke-dasharray="2 8"/>
+        <circle cx="200" cy="200" r="172" fill="url(#injera)"/>
+        <circle cx="200" cy="200" r="172" fill="url(#shade)"/>
+        <!-- stews -->
+        <g class="stew"><circle cx="200" cy="200" r="44" fill="#7a2614"/><circle cx="192" cy="192" r="10" fill="#f1e6cf"/><circle cx="214" cy="210" r="7" fill="#5a1a0c"/></g>
+        <g class="stew"><circle cx="200" cy="92" r="34" fill="#c9721f"/><circle cx="190" cy="88" r="4" fill="#e9a54b"/><circle cx="208" cy="98" r="3" fill="#e9a54b"/></g>
+        <g class="stew"><circle cx="296" cy="150" r="32" fill="#3f6b2a"/><path d="M280 140q16-10 30 4M284 160q14-8 26 2" stroke="#6c9b3e" stroke-width="3" fill="none"/></g>
+        <g class="stew"><circle cx="292" cy="258" r="32" fill="#e2b33c"/><circle cx="284" cy="252" r="4" fill="#f3d47a"/><circle cx="300" cy="264" r="3" fill="#f3d47a"/></g>
+        <g class="stew"><circle cx="200" cy="310" r="33" fill="#9b3a1c"/><rect x="186" y="298" width="10" height="8" rx="2" fill="#5c2410"/><rect x="204" y="312" width="12" height="8" rx="2" fill="#5c2410"/></g>
+        <g class="stew"><circle cx="106" cy="258" r="32" fill="#b7552a"/><circle cx="100" cy="252" r="5" fill="#d98b52"/></g>
+        <g class="stew"><circle cx="104" cy="150" r="32" fill="#efe4cf"/><circle cx="96" cy="146" r="3" fill="#7d9a4a"/><circle cx="112" cy="156" r="3" fill="#c33"/></g>
+      </svg>
+      <div class="hero-badge">
+        <span class="badge-top" data-i18n="hero.badgeTop">Since</span>
+        <span class="badge-year">1983</span>
+        <span class="badge-bot">ከ፲፱፻፸፭ ዓ.ም.</span>
+      </div>
+    </div>
+  </div>
+  <div class="tibeb" aria-hidden="true"></div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Doro Wat</span><i>✦</i><span>ክትፎ</span><i>✦</i><span>Tibs</span><i>✦</i><span>በያይነቱ</span><i>✦</i><span>Shiro</span><i>✦</i><span>ቡና</span><i>✦</i><span>Tej</span><i>✦</i><span>ዶሮ ወጥ</span><i>✦</i><span>Kitfo</span><i>✦</i><span>ጥብስ</span><i>✦</i><span>Beyaynetu</span><i>✦</i><span>ሽሮ</span><i>✦</i><span>Buna</span><i>✦</i><span>ጠጅ</span><i>✦</i>
+    <span>Doro Wat</span><i>✦</i><span>ክትፎ</span><i>✦</i><span>Tibs</span><i>✦</i><span>በያይነቱ</span><i>✦</i><span>Shiro</span><i>✦</i><span>ቡና</span><i>✦</i><span>Tej</span><i>✦</i><span>ዶሮ ወጥ</span><i>✦</i><span>Kitfo</span><i>✦</i><span>ጥብስ</span><i>✦</i><span>Beyaynetu</span><i>✦</i><span>ሽሮ</span><i>✦</i><span>Buna</span><i>✦</i><span>ጠጅ</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ STORY ============ -->
+<section class="section story" id="story">
+  <div class="container story-grid">
+    <div class="story-copy reveal">
+      <p class="eyebrow" data-i18n="story.eyebrow">Our Story</p>
+      <h2 data-i18n="story.title">A village table, set since 1983</h2>
+      <p data-i18n="story.p1">Selam Village began with a simple promise: to cook the way our mothers and grandmothers did — patiently, generously, and with the freshest spices we could find. "Selam" means peace, and for more than forty years our home has been a place of peace, conversation and shared plates.</p>
+      <p data-i18n="story.p2">Our berbere is still blended in-house, our niter kibbeh still clarified slowly, and our injera still fermented the traditional way from teff. What has grown is our family — the guests, weddings and celebrations we have had the honour of feeding across generations.</p>
+      <blockquote class="pull" data-i18n="story.quote">"Food eaten together from one plate makes one family."</blockquote>
+    </div>
+    <ol class="timeline reveal">
+      <li><span class="t-year">1983</span><span class="t-text" data-i18n="tl.1">Selam Village opens its doors with a small kitchen and a handful of tables.</span></li>
+      <li><span class="t-year">1990s</span><span class="t-text" data-i18n="tl.2">Word spreads — we begin catering weddings, holidays and community gatherings.</span></li>
+      <li><span class="t-year">2000s</span><span class="t-text" data-i18n="tl.3">A larger dining room and our signature traditional coffee ceremony.</span></li>
+      <li><span class="t-year">Today</span><span class="t-text" data-i18n="tl.4">A second generation carries the recipes forward — from intimate dinners to events of hundreds.</span></li>
+    </ol>
+  </div>
+  <div class="container stats reveal">
+    <div class="stat"><span class="stat-num" data-count="40">40+</span><span class="stat-label" data-i18n="stat.1">Years of tradition</span></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-i18n="stat.2">Teff injera, made fresh</span></div>
+    <div class="stat"><span class="stat-num">500+</span><span class="stat-label" data-i18n="stat.3">Guests catered per event</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label" data-i18n="stat.4">Generations of recipes</span></div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section menu" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="menu.eyebrow">The Menu</p>
+      <h2 data-i18n="menu.title">From our kitchen to your mesob</h2>
+      <p class="section-lead" data-i18n="menu.lead">Every dish is served on fresh injera to share. Ask your server about spice levels — we're happy to make it milder or hotter.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active" data-tab="meat" role="tab" data-i18n="tab.meat">Signature Meats</button>
+      <button class="tab" data-tab="fasting" role="tab" data-i18n="tab.fasting">Fasting & Vegan</button>
+      <button class="tab" data-tab="breakfast" role="tab" data-i18n="tab.breakfast">Breakfast</button>
+      <button class="tab" data-tab="drinks" role="tab" data-i18n="tab.drinks">Coffee & Drinks</button>
+    </div>
+
+    <div class="menu-panel active" data-panel="meat">
+      <article class="dish"><div class="dish-head"><h3>Doro Wat <span class="am">ዶሮ ወጥ</span></h3><span class="tag hot" data-i18n="tag.signature">Signature</span></div><p data-i18n="d.doro">Chicken slow-simmered for hours in berbere and caramelised onion, served with a hard-boiled egg and ayib.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Kitfo <span class="am">ክትፎ</span></h3><span class="tag" data-i18n="tag.chef">Chef's pick</span></div><p data-i18n="d.kitfo">Finely minced lean beef warmed in spiced butter and mitmita — served raw, rare (lebleb) or cooked, with ayib and gomen.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Yebeg Tibs <span class="am">የበግ ጥብስ</span></h3></div><p data-i18n="d.tibs">Tender lamb sautéed with rosemary, onion, jalapeño and niter kibbeh, brought sizzling to the table.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Zilzil Tibs <span class="am">ዝልዝል ጥብስ</span></h3></div><p data-i18n="d.zilzil">Strips of beef pan-seared with awaze and fresh herbs — smoky, juicy and made for sharing.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Key Wat <span class="am">ቀይ ወጥ</span></h3><span class="tag hot" data-i18n="tag.spicy">Spicy</span></div><p data-i18n="d.keywat">Rich beef stew in a deep red berbere sauce, simmered until meltingly tender.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Gored Gored <span class="am">ጎረድ ጎረድ</span></h3></div><p data-i18n="d.gored">Cubes of prime beef tossed in awaze and spiced butter — a celebration favourite.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Selam Village Platter <span class="am">የሰላም ቪሌጅ ማዕድ</span></h3><span class="tag" data-i18n="tag.share">For 2–4</span></div><p data-i18n="d.platter">Our grand tasting mesob: doro wat, key wat, tibs and kitfo with seasonal vegetables on a family-sized injera.</p></article>
+    </div>
+
+    <div class="menu-panel" data-panel="fasting">
+      <article class="dish"><div class="dish-head"><h3>Beyaynetu <span class="am">በያይነቱ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.beyaynetu">A colourful sampler of our fasting dishes — shiro, misir, kik alicha, gomen, atkilt and fresh salad.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Shiro <span class="am">ሽሮ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.shiro">Velvety ground chickpea stew with garlic and berbere, served bubbling in a clay pot.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Misir Wat <span class="am">ምስር ወጥ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.misir">Red lentils cooked down with onions, garlic and berbere until rich and silky.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Kik Alicha <span class="am">ክክ አልጫ</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.kik">Mild yellow split peas with turmeric, ginger and garlic — gentle and comforting.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Gomen <span class="am">ጎመን</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.gomen">Collard greens braised with garlic, ginger and green chilli.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Atkilt <span class="am">አትክልት</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.atkilt">Cabbage, carrots and potatoes gently stewed with turmeric and onion.</p></article>
+    </div>
+
+    <div class="menu-panel" data-panel="breakfast">
+      <article class="dish"><div class="dish-head"><h3>Firfir <span class="am">ፍርፍር</span></h3></div><p data-i18n="d.firfir">Torn injera tossed in spiced berbere sauce and butter — the classic Ethiopian morning.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Chechebsa <span class="am">ጨጨብሳ</span></h3></div><p data-i18n="d.chechebsa">Flaky flatbread shredded with niter kibbeh and berbere, finished with honey and yoghurt.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Ful <span class="am">ፉል</span></h3><span class="tag veg" data-i18n="tag.vegan">Vegan</span></div><p data-i18n="d.ful">Mashed fava beans with tomato, onion, jalapeño and olive oil, served with warm bread.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Enkulal Firfir <span class="am">እንቁላል ፍርፍር</span></h3></div><p data-i18n="d.enkulal">Scrambled eggs with onion, tomato and green pepper, cooked in spiced butter.</p></article>
+    </div>
+
+    <div class="menu-panel" data-panel="drinks">
+      <article class="dish"><div class="dish-head"><h3>Buna Ceremony <span class="am">የቡና ሥነ ሥርዓት</span></h3><span class="tag" data-i18n="tag.ritual">Ritual</span></div><p data-i18n="d.buna">Green beans roasted at your table, ground by hand and brewed in a clay jebena — served in three rounds with popcorn and incense.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Tej <span class="am">ጠጅ</span></h3></div><p data-i18n="d.tej">Traditional honey wine, golden and gently sweet, served in a berele.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Tella <span class="am">ጠላ</span></h3></div><p data-i18n="d.tella">Home-style Ethiopian barley brew with a smoky, earthy finish.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Shai <span class="am">ሻይ</span></h3></div><p data-i18n="d.shai">Spiced black tea with cinnamon, clove and cardamom.</p></article>
+      <article class="dish"><div class="dish-head"><h3>Spris <span class="am">ስፕሪስ</span></h3></div><p data-i18n="d.spris">Layered fresh juices — avocado, mango and papaya — a Merkato favourite.</p></article>
+    </div>
+
+    <p class="menu-note reveal" data-i18n="menu.note">Menu items and availability may vary by season. Please let us know about any allergies.</p>
+  </div>
+</section>
+
+<!-- ============ DINING ============ -->
+<section class="section dining" id="dining">
+  <div class="container dining-grid">
+    <div class="dining-art reveal" aria-hidden="true">
+      <!-- Jebena & cups -->
+      <svg viewBox="0 0 360 380">
+        <ellipse cx="180" cy="350" rx="150" ry="16" fill="#000" opacity=".25"/>
+        <path d="M60 330h240l-12 14H72z" fill="#5a3a24"/>
+        <rect x="56" y="318" width="248" height="14" rx="3" fill="#7a5032"/>
+        <!-- jebena -->
+        <path d="M180 120c-18 0-22 22-22 40 0 10-50 30-50 90 0 40 30 68 72 68s72-28 72-68c0-60-50-80-50-90 0-18-4-40-22-40z" fill="#2b1a10"/>
+        <path d="M150 250c0 30 14 52 30 52" stroke="#c9a14a" stroke-width="3" fill="none" opacity=".6"/>
+        <path d="M252 230c26-6 40-40 46-70" stroke="#2b1a10" stroke-width="12" stroke-linecap="round" fill="none"/>
+        <path d="M110 220c-24 0-30 40-8 52" stroke="#2b1a10" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <rect x="166" y="108" width="28" height="14" rx="4" fill="#c9a14a"/>
+        <path d="M172 108c0-20 16-20 16 0" fill="#8a5a2b"/>
+        <!-- steam -->
+        <g class="steam" stroke="#f4ece1" stroke-width="3" fill="none" stroke-linecap="round" opacity=".55">
+          <path d="M300 140c-10-14 10-22 0-36"/>
+          <path d="M314 150c-10-14 10-22 0-36"/>
+        </g>
+        <!-- cups -->
+        <g fill="#f4ece1"><path d="M50 300h34l-4 18H54z"/><path d="M276 300h34l-4 18h-26z"/><path d="M90 300h34l-4 18H94z"/></g>
+        <g stroke="#a8341f" stroke-width="2"><path d="M52 306h30M278 306h30M92 306h30"/></g>
+      </svg>
+    </div>
+    <div class="dining-copy reveal">
+      <p class="eyebrow" data-i18n="dining.eyebrow">Dine With Us</p>
+      <h2 data-i18n="dining.title">The experience of the mesob</h2>
+      <p data-i18n="dining.p1">In Ethiopia, a meal is never eaten alone. At Selam Village, dishes arrive on a single, generous injera at the centre of the table, and everyone eats together by hand. It's slower, warmer, and far more fun.</p>
+      <ul class="features">
+        <li><span class="f-ico">◈</span><div><strong data-i18n="f.1t">Gursha, the gift of a bite</strong><p data-i18n="f.1d">Feed a friend a bite by hand — the Ethiopian gesture of love and respect.</p></div></li>
+        <li><span class="f-ico">◈</span><div><strong data-i18n="f.2t">Traditional coffee ceremony</strong><p data-i18n="f.2d">Roasted, ground and brewed before your eyes, with frankincense in the air.</p></div></li>
+        <li><span class="f-ico">◈</span><div><strong data-i18n="f.3t">Private dining</strong><p data-i18n="f.3d">Reserve our dining room for birthdays, family gatherings and business dinners.</p></div></li>
+      </ul>
+      <a href="#contact" class="btn" data-i18n="dining.cta">Reserve a Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATERING ============ -->
+<section class="section catering" id="catering">
+  <div class="container">
+    <div class="section-head light reveal">
+      <p class="eyebrow" data-i18n="cat.eyebrow">Catering</p>
+      <h2 data-i18n="cat.title">Bring Selam Village to your celebration</h2>
+      <p class="section-lead" data-i18n="cat.lead">From a family melse to a wedding of five hundred, we cater with the same care as our dining room — complete with traditional serving, staff in habesha attire and an optional coffee ceremony.</p>
+    </div>
+
+    <div class="packages">
+      <article class="pkg reveal">
+        <span class="pkg-num">01</span>
+        <h3 data-i18n="pkg.1t">Family Gathering</h3>
+        <p class="pkg-guests" data-i18n="pkg.1g">10 – 50 guests</p>
+        <ul>
+          <li data-i18n="pkg.1a">Choice of 2 meat & 3 vegetarian dishes</li>
+          <li data-i18n="pkg.1b">Fresh injera & bread</li>
+          <li data-i18n="pkg.1c">Pickup or delivery</li>
+        </ul>
+      </article>
+      <article class="pkg featured reveal">
+        <span class="pkg-ribbon" data-i18n="pkg.popular">Most requested</span>
+        <span class="pkg-num">02</span>
+        <h3 data-i18n="pkg.2t">Weddings & Celebrations</h3>
+        <p class="pkg-guests" data-i18n="pkg.2g">50 – 500+ guests</p>
+        <ul>
+          <li data-i18n="pkg.2a">Full custom menu & tasting</li>
+          <li data-i18n="pkg.2b">On-site cooking, serving & staff</li>
+          <li data-i18n="pkg.2c">Traditional mesob & buffet setup</li>
+          <li data-i18n="pkg.2d">Coffee ceremony & tej service</li>
+        </ul>
+      </article>
+      <article class="pkg reveal">
+        <span class="pkg-num">03</span>
+        <h3 data-i18n="pkg.3t">Corporate & Community</h3>
+        <p class="pkg-guests" data-i18n="pkg.3g">20 – 300 guests</p>
+        <ul>
+          <li data-i18n="pkg.3a">Buffet or boxed lunches</li>
+          <li data-i18n="pkg.3b">Clearly labelled vegan & fasting options</li>
+          <li data-i18n="pkg.3c">Setup and cleanup included</li>
+        </ul>
+      </article>
+    </div>
+
+    <ol class="steps reveal">
+      <li><span>1</span><strong data-i18n="step.1t">Tell us about your event</strong><p data-i18n="step.1d">Date, guest count and the occasion.</p></li>
+      <li><span>2</span><strong data-i18n="step.2t">Design your menu</strong><p data-i18n="step.2d">We'll suggest dishes and arrange a tasting.</p></li>
+      <li><span>3</span><strong data-i18n="step.3t">Celebrate</strong><p data-i18n="step.3d">We cook, serve and take care of the rest.</p></li>
+    </ol>
+
+    <form class="inquiry reveal" id="inquire" novalidate>
+      <h3 data-i18n="form.title">Catering inquiry</h3>
+      <div class="form-grid">
+        <label><span data-i18n="form.name">Full name</span><input name="name" required autocomplete="name"></label>
+        <label><span data-i18n="form.phone">Phone</span><input name="phone" type="tel" required autocomplete="tel"></label>
+        <label><span data-i18n="form.email">Email</span><input name="email" type="email" autocomplete="email"></label>
+        <label><span data-i18n="form.date">Event date</span><input name="date" type="date" required></label>
+        <label><span data-i18n="form.guests">Number of guests</span><input name="guests" type="number" min="1" required></label>
+        <label><span data-i18n="form.type">Event type</span>
+          <select name="type">
+            <option data-i18n="opt.wedding">Wedding</option>
+            <option data-i18n="opt.family">Family gathering</option>
+            <option data-i18n="opt.holiday">Holiday (Genna, Fasika, Meskel…)</option>
+            <option data-i18n="opt.corporate">Corporate</option>
+            <option data-i18n="opt.other">Other</option>
+          </select>
+        </label>
+        <label class="full"><span data-i18n="form.msg">Tell us more</span><textarea name="msg" rows="4"></textarea></label>
+      </div>
+      <button class="btn" type="submit" data-i18n="form.submit">Send Inquiry</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Visit Us</p>
+      <h2 data-i18n="contact.title">Come as a guest, leave as family</h2>
+      <dl class="info">
+        <div><dt data-i18n="contact.addr">Address</dt><dd data-i18n="contact.addrV">[Street address, City]</dd></div>
+        <div><dt data-i18n="contact.phone">Phone</dt><dd><a href="tel:+000000000">[+000 000 0000]</a></dd></div>
+        <div><dt data-i18n="contact.email">Email</dt><dd><a href="mailto:info@selamvillage.com">info@selamvillage.com</a></dd></div>
+      </dl>
+      <h3 class="hours-title" data-i18n="hours.title">Opening hours</h3>
+      <ul class="hours">
+        <li><span data-i18n="hours.wk">Monday – Friday</span><span>11:00 – 22:00</span></li>
+        <li><span data-i18n="hours.sat">Saturday</span><span>09:00 – 23:00</span></li>
+        <li><span data-i18n="hours.sun">Sunday</span><span>09:00 – 21:00</span></li>
+      </ul>
+      <a class="btn btn-ghost-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Selam+Village+Ethiopian+Restaurant" data-i18n="contact.directions">Get Directions</a>
+    </div>
+    <div class="map reveal">
+      <iframe title="Selam Village on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Selam+Village+Ethiopian+Restaurant&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="tibeb" aria-hidden="true"></div>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark big">ሰ</span>
+      <p class="footer-name">Selam Village <span>ሰላም ቪሌጅ</span></p>
+      <p data-i18n="footer.tag">Authentic Ethiopian cuisine & catering since 1983.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#story" data-i18n="nav.story">Our Story</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#catering" data-i18n="nav.catering">Catering</a>
+      <a href="#contact" data-i18n="nav.contact">Visit</a>
+    </nav>
+    <p class="copy">© <span id="year"></span> Selam Village. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
