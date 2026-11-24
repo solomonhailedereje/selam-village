@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=202611242008">
+  <link rel="stylesheet" href="styles.css?v=202611242012">
   <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
 </head>
 <body class="page-index">
@@ -48,7 +48,6 @@
     <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
     <a href="rooms.html" data-i18n="nav.rooms">Rooms</a>
     <a href="catering.html" data-i18n="nav.catering">Catering</a>
-    <a href="contact.html" data-i18n="nav.contact">Visit</a>
   </nav>
   <div class="nav-actions">
     <div class="lang-toggle" role="group" aria-label="Language">
@@ -108,10 +107,6 @@
         <span class="card-img"><img src="images/photos/mesob.jpg" alt="" loading="lazy"></span>
         <span class="card-body"><strong data-i18n="nav.story">Our Story</strong><span data-i18n="card.story">More than 35 years of Ethiopian hospitality since 1991.</span><span class="card-arrow">→</span></span>
       </a>
-      <a class="card reveal" href="contact.html">
-        <span class="card-img"><img src="images/photos/beyaynetu.jpg" alt="" loading="lazy"></span>
-        <span class="card-body"><strong data-i18n="nav.contact">Visit</strong><span data-i18n="card.visit">Giorgis, next to Addis Ababa Restaurant. Open daily from 08:00.</span><span class="card-arrow">→</span></span>
-      </a>
     </div>
   </div>
 </section>
@@ -136,16 +131,27 @@
       </svg>
       <p class="footer-name"><span class="lang-en">Selam Village</span><span class="lang-am">ሰላም ቪሌጅ</span></p>
       <p data-i18n="footer.tag">Authentic Ethiopian cuisine & catering since 1991.</p>
-      <p class="footer-addr" data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</p>
     </div>
-    <nav class="footer-links">
-      <a href="story.html" data-i18n="nav.story">Our Story</a>
-      <a href="menu.html" data-i18n="nav.menu">Menu</a>
-      <a href="catering.html" data-i18n="nav.catering">Catering</a>
-      <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
-      <a href="rooms.html" data-i18n="nav.rooms">Rooms</a>
-      <a href="contact.html" data-i18n="nav.contact">Visit</a>
-    </nav>
+    <div class="footer-col footer-visit">
+      <h3 data-i18n="contact.eyebrow">Visit Us</h3>
+      <dl class="info">
+        <div><dt data-i18n="contact.addr">Address</dt><dd data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</dd></div>
+        <div><dt data-i18n="contact.phone">Phone</dt><dd><a href="tel:+000000000">[+000 000 0000]</a></dd></div>
+        <div><dt data-i18n="contact.email">Email</dt><dd><a href="mailto:info@selamvillage.com">info@selamvillage.com</a></dd></div>
+      </dl>
+    </div>
+    <div class="footer-col footer-hours">
+      <h3 data-i18n="hours.title">Opening hours</h3>
+      <ul class="hours">
+        <li><span data-i18n="hours.wk">Monday – Friday</span><span data-i18n="hours.t1">08:00 – 22:00</span></li>
+        <li><span data-i18n="hours.sat">Saturday – Sunday</span><span data-i18n="hours.t2">08:00 – 23:00</span></li>
+      </ul>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Addis+Ababa+Restaurant+Giorgis+Addis+Ababa" data-i18n="contact.directions">Get Directions</a>
+    </div>
+    <div class="footer-map">
+      <iframe title="Selam Village on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Addis+Ababa+Restaurant,+Giorgis,+Addis+Ababa&amp;z=17&amp;output=embed"></iframe>
+    </div>
     <details class="credits">
       <summary data-i18n="gal.credits">Photo credits</summary>
       <ul>
@@ -173,7 +179,7 @@
   </div>
 </footer>
 
-<script src="i18n.js?v=202611242008"></script>
-<script src="script.js?v=202611242008"></script>
+<script src="i18n.js?v=202611242012"></script>
+<script src="script.js?v=202611242012"></script>
 </body>
 </html>
