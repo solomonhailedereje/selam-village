@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rooms · Selam Village</title>
+  <meta name="description" content="Selam Village — authentic Ethiopian cuisine, dine-in and full-service catering since 1983. Tire siga, ox &amp; goat tibs, dulet, vegetarian dishes, a full bar, a big garden and in-house events in Giorgis, Addis Ababa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+</head>
+<body class="page-rooms">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <mask id="oxHoles" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="110">
+      <rect width="120" height="110" fill="#fff"/>
+      <ellipse cx="49" cy="42" rx="6.5" ry="4.5" transform="rotate(22 49 42)" fill="#000"/>
+      <ellipse cx="71" cy="42" rx="6.5" ry="4.5" transform="rotate(-22 71 42)" fill="#000"/>
+      <ellipse cx="56" cy="94" rx="2.2" ry="3.6" fill="#000"/>
+      <ellipse cx="64" cy="94" rx="2.2" ry="3.6" fill="#000"/>
+      <path d="M50 55q2 15 6 27M70 55q-2 15-6 27" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </mask>
+    <symbol id="ox" viewBox="0 0 120 110">
+      <g mask="url(#oxHoles)" fill="currentColor">
+        <path d="M45 30C30 33 13 28 6 12 4 6 8 1 11.5 5.5 18 16 30 21 47 20z"/>
+        <path d="M75 30C90 33 107 28 114 12 116 6 112 1 108.5 5.5 102 16 90 21 73 20z"/>
+        <path d="M42 18c8-7 28-7 36 0 6 6 4 18 0 28-4 14-8 34-10 50-2 9-14 9-16 0-2-16-6-36-10-50-4-10-6-22 0-28z"/>
+      </g>
+      <path d="M60 21l4.5 6.5L60 34l-4.5-6.5z" fill="#c9a14a"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">
+    <svg class="brand-skull" aria-hidden="true"><use href="#ox"/></svg>
+    <span class="brand-text">
+      <span class="brand-name">Selam Village</span>
+      <span class="brand-sub">Since 1983 · <span class="am-inline">ከ፲፱፻፸፭ ዓ.ም. ጀምሮ</span></span>
+    </span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="story.html" data-i18n="nav.story">Our Story</a>
+    <a href="menu.html" data-i18n="nav.menu">Menu</a>
+    <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
+    <a href="rooms.html" data-i18n="nav.rooms" aria-current="page">Rooms</a>
+    <a href="catering.html" data-i18n="nav.catering">Catering</a>
+    <a href="contact.html" data-i18n="nav.contact">Visit</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="am">አማ</button>
+    </div>
+    <a href="catering.html#inquire" class="btn btn-small" data-i18n="nav.book">Book Catering</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<nav class="crumbs container" aria-label="Breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><span data-i18n="nav.rooms">Rooms</span></nav>
+<section class="page-hero" style="--img:url('images/rooms.jpg')">
+  <div class="container page-hero-inner">
+    <div class="page-hero-box">
+      <p class="page-hero-am">ክፍሎች</p>
+      <h1 data-i18n="nav.rooms">Rooms</h1>
+    </div>
+  </div>
+</section>
+<!-- ============ ROOMS ============ -->
+<section class="section rooms">
+  <div class="container">
+    <div class="rooms-intro">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="rooms.eyebrow">Stay with us</p>
+        <h2 data-i18n="rooms.title">Rooms at Selam Village</h2>
+        <p class="section-lead" data-i18n="rooms.lead">Stay a night or a week in the heart of Giorgis. Our guest rooms are right beside the restaurant and garden — wake up to fresh coffee and Ethiopian hospitality.</p>
+      </div>
+      <ul class="features reveal">
+        <li><span class="f-ico">■</span><div><strong data-i18n="rf.1t">Quiet, clean rooms</strong><p data-i18n="rf.1d">Comfortable rooms close to our garden, away from the street noise.</p></div></li>
+        <li><span class="f-ico">■</span><div><strong data-i18n="rf.2t">Restaurant, bar &amp; coffee on site</strong><p data-i18n="rf.2d">Breakfast, tibs, kitfo and the coffee ceremony are only a few steps away.</p></div></li>
+        <li><span class="f-ico">■</span><div><strong data-i18n="rf.3t">Central location</strong><p data-i18n="rf.3d">In Giorgis, next to Addis Ababa Restaurant — close to Piassa and the city centre.</p></div></li>
+        <li><span class="f-ico">■</span><div><strong data-i18n="rf.4t">Perfect for event guests</strong><p data-i18n="rf.4d">Celebrating with us? Your family and wedding guests can stay where the party is.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="packages">
+      <article tabindex="0" role="button" data-room="single" class="pkg reveal">
+        <span class="pkg-num">01</span>
+        <h3 data-i18n="room.1t">Single Room</h3>
+        <p class="pkg-guests" data-i18n="room.1g">1 guest</p>
+        <ul>
+          <li data-i18n="room.1a">One comfortable bed</li>
+          <li data-i18n="room.1b">Ideal for business or solo travellers</li>
+        </ul>
+        <span class="btn pkg-cta" data-i18n="room.cta">Book this room</span>
+      </article>
+      <article tabindex="0" role="button" data-room="double" class="pkg featured reveal">
+        <span class="pkg-ribbon" data-i18n="room.popular">Most booked</span>
+        <span class="pkg-num">02</span>
+        <h3 data-i18n="room.2t">Double Room</h3>
+        <p class="pkg-guests" data-i18n="room.2g">2 guests</p>
+        <ul>
+          <li data-i18n="room.2a">Double bed or two singles</li>
+          <li data-i18n="room.2b">Great for couples and friends</li>
+        </ul>
+        <span class="btn pkg-cta" data-i18n="room.cta">Book this room</span>
+      </article>
+      <article tabindex="0" role="button" data-room="family" class="pkg reveal">
+        <span class="pkg-num">03</span>
+        <h3 data-i18n="room.3t">Family Room</h3>
+        <p class="pkg-guests" data-i18n="room.3g">3 – 4 guests</p>
+        <ul>
+          <li data-i18n="room.3a">Space for the whole family</li>
+          <li data-i18n="room.3b">Ideal for wedding and holiday guests</li>
+        </ul>
+        <span class="btn pkg-cta" data-i18n="room.cta">Book this room</span>
+      </article>
+    </div>
+
+    <form class="inquiry booking-form reveal" id="roomForm" data-subject="Room booking" data-subject-fields="room,checkin" novalidate>
+      <h3 data-i18n="rform.title">Room booking request</h3>
+      <p class="form-intro" data-i18n="rform.intro">Choose a room above or fill in the form — we&#x27;ll confirm availability and price by phone.</p>
+      <div class="form-grid">
+        <label class="full pkg-field"><span data-i18n="rform.room">Room</span>
+          <select name="room">
+            <option value="single" data-i18n="opt.room.single">Single Room</option>
+            <option value="double" data-i18n="opt.room.double">Double Room</option>
+            <option value="family" data-i18n="opt.room.family">Family Room</option>
+            <option value="unsure" data-i18n="opt.room.unsure" selected>Not sure yet</option>
+          </select>
+        </label>
+        <label><span data-i18n="form.name">Full name</span><input name="name" required autocomplete="name"></label>
+        <label><span data-i18n="form.phone">Phone</span><input name="phone" type="tel" required autocomplete="tel"></label>
+        <label><span data-i18n="rform.checkin">Check-in</span><input name="checkin" type="date" required></label>
+        <label><span data-i18n="rform.checkout">Check-out</span><input name="checkout" type="date" required></label>
+        <label><span data-i18n="rform.guests">Guests</span><input name="guests" type="number" min="1" value="1" required></label>
+        <label><span data-i18n="rform.rooms">Number of rooms</span><input name="rooms" type="number" min="1" value="1"></label>
+        <label class="full"><span data-i18n="form.email">Email</span><input name="email" type="email" autocomplete="email"></label>
+        <label class="full"><span data-i18n="form.msg">Tell us more</span><textarea name="msg" rows="4"></textarea></label>
+      </div>
+      <button class="btn" type="submit" data-i18n="form.submit">Send Inquiry</button>
+      <p class="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg class="footer-emblem" viewBox="0 0 200 200" role="img" aria-label="Selam Village — since 1983 · ከ፲፱፻፸፭ ዓ.ም. ጀምሮ">
+        <defs>
+          <path id="footer-emblem-top" d="M24,100 A76,76 0 0,1 176,100"/>
+          <path id="footer-emblem-bot" d="M11,100 A89,89 0 0,0 189,100"/>
+        </defs>
+        <circle cx="100" cy="100" r="97" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="100" cy="100" r="66" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/>
+        <text class="emb-t"><textPath href="#footer-emblem-top" startOffset="50%" text-anchor="middle">SINCE 1983</textPath></text>
+        <text class="emb-t emb-am"><textPath href="#footer-emblem-bot" startOffset="50%" text-anchor="middle">ከ፲፱፻፸፭ ዓ.ም. ጀምሮ</textPath></text>
+        <circle cx="16" cy="100" r="2.5" fill="#c9a14a"/><circle cx="184" cy="100" r="2.5" fill="#c9a14a"/>
+        <use href="#ox" x="52" y="56" width="96" height="88"/>
+      </svg>
+      <p class="footer-name">Selam Village <span>ሰላም ቪሌጅ</span></p>
+      <p data-i18n="footer.tag">Authentic Ethiopian cuisine & catering since 1983.</p>
+      <p class="footer-addr" data-i18n="contact.addrV">Giorgis, next to Addis Ababa Restaurant, Addis Ababa, Ethiopia</p>
+    </div>
+    <nav class="footer-links">
+      <a href="story.html" data-i18n="nav.story">Our Story</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="catering.html" data-i18n="nav.catering">Catering</a>
+      <a href="garden.html" data-i18n="nav.dining">Garden & Events</a>
+      <a href="rooms.html" data-i18n="nav.rooms" aria-current="page">Rooms</a>
+      <a href="contact.html" data-i18n="nav.contact">Visit</a>
+    </nav>
+    <details class="credits">
+      <summary data-i18n="gal.credits">Photo credits</summary>
+      <ul>
+        <li>Non-fasting Beyaynetu in Yod Abyssinia 1 — Jean Rebiffé, <a href="https://commons.wikimedia.org/wiki/File:Non-fasting_Beyaynetu_in_Yod_Abyssinia_1.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Tere siga - raw beef dish, Ethiopia 2014 — Neftalem, <a href="https://commons.wikimedia.org/wiki/File:Tere_siga_-_raw_beef_dish,_Ethiopia_2014.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Tibs in Yod Abyssinia — Jean Rebiffé, <a href="https://commons.wikimedia.org/wiki/File:Tibs_in_Yod_Abyssinia.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Mutton tibs and injera — ShanaliCT, <a href="https://commons.wikimedia.org/wiki/File:Mutton_tibs_and_injera.jpg" target="_blank" rel="noopener">CC BY 4.0</a>, via Wikimedia Commons</li>
+        <li>Beyaynetu ethiopian food — Yonatan Solomon, <a href="https://commons.wikimedia.org/wiki/File:Beyaynetu_ethiopian_food.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Ethiopian vegetarian sampler — Sdkb, <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_vegetarian_sampler.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Ethiopian fasting platter — Jbinthecity, <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_fasting_platter.jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+        <li>Coffee ceremony of Ethiopia and Eritrea 1 — ProtoplasmaKid, <a href="https://commons.wikimedia.org/wiki/File:Coffee_ceremony_of_Ethiopia_and_Eritrea_1.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Jebena — O.Mustafin, <a href="https://commons.wikimedia.org/wiki/File:Jebena.jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+        <li>Tej (Ethiopian honey wine) (27241999346) — cotterillmike, <a href="https://commons.wikimedia.org/wiki/File:Tej_(Ethiopian_honey_wine)_(27241999346).jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+        <li>Kitfo (Ethiopian Tartar) — Michael T., <a href="https://commons.wikimedia.org/wiki/File:Kitfo_(Ethiopian_Tartar).jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a>, via Wikimedia Commons</li>
+        <li>Kitfo (ክትፎ) — Vipon8, <a href="https://commons.wikimedia.org/wiki/File:Kitfo_(%E1%8A%AD%E1%89%B5%E1%8D%8E).jpg" target="_blank" rel="noopener">CC0</a>, via Wikimedia Commons</li>
+        <li>Ethiopian and Eritrean Mesob — Betselot Yergalem, <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_and_Eritrean_Mesob.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+        <li>Dulet — Charles Haynes, <a href="https://www.flickr.com/photos/87232391@N00/5043879272" target="_blank" rel="noopener">CC BY-SA 2.0</a>, via Flickr</li>
+        <li>Ethiopia most popular food — Yjohny, <a href="https://commons.wikimedia.org/wiki/File:Ethiopia_most_popular_food.JPG" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+      </ul>
+    </details>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
