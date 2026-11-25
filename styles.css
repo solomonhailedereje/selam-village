@@ -418,3 +418,10 @@ html[lang="am"] .hero-am { font-size: inherit; font-weight: 700; opacity: 1; mar
 /* Spam trap: invisible to people, bots fill it in */
 .hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
 .inquiry .btn[disabled] { opacity: .6; cursor: wait; }
+/* Social links */
+.social { display: flex; align-items: center; gap: 10px; margin-top: 18px; }
+.social-label { font-size: .9rem; font-weight: 600; margin-right: 4px; }
+.social a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+  background: var(--accent); color: #fff; transition: background .2s; }
+.social a:hover, .social a:focus-visible { background: var(--accent-2); }
+.social svg { width: 20px; height: 20px; }
