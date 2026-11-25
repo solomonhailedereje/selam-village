@@ -10,7 +10,6 @@ Website for **Selam Village**, a traditional Ethiopian restaurant and catering c
 - Pure HTML/CSS/JS — no build step. Open `index.html` or host on GitHub Pages.
 
 ## Before going live — replace placeholders
-- Phone number in the footer of each page
 - A real garden photo at `images/garden.jpg` and a room photo at `images/rooms.jpg` (see `images/README.md`)
 - The year Selam Butchery & Grocery 2 opened (story timeline shows "Expansion"), room amenities and the vegetarian dishes on the menu — confirm they match what Selam Village really offers
 - `CATERING_EMAIL` in `script.js` and the email link in the footer of each page
