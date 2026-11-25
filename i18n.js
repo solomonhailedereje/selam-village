@@ -220,10 +220,16 @@ window.SELAM_AM = {
   "opt.pkg.meat": "የሥጋ አቅርቦት (ለሆቴሎችና ለሱፐርማርኬቶች)",
   "hours.t1": "ጠዋት 2:00 – ምሽት 4:00",
   "hours.t2": "ጠዋት 2:00 – ሌሊት 5:00",
+  "form.sending": "በመላክ ላይ…",
+  "form.sent": "እናመሰግናለን! ጥያቄዎ ተልኳል። ለማረጋገጥ በቅርቡ እንደውልልዎታለን።",
+  "form.fail": "ይቅርታ፣ ችግር ተፈጥሯል። እባክዎ በ+251 95 831 2525 ይደውሉልን።",
   "footer.tag": "ከ1980 ዓ.ም. ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።"
 };
 
 window.SELAM_EN_EXTRA = {
+  "form.sending": "Sending…",
+  "form.sent": "Thank you! Your request has been sent. We'll call you shortly to confirm.",
+  "form.fail": "Sorry, something went wrong. Please call us on +251 95 831 2525.",
   "card.menu": "Tire siga, kitfo, ox & goat tibs, dulet, vegetarian dishes and a full bar.",
   "tag.special": "House special",
   "d.special": "Our house special: premium kitfo served with ayib, gomen, kocho and mitmita, the full traditional spread.",

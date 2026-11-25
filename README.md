@@ -12,11 +12,13 @@ Website for **Selam Village**, a traditional Ethiopian restaurant and catering c
 ## Before going live — replace placeholders
 - A real garden photo at `images/garden.jpg` and a room photo at `images/rooms.jpg` (see `images/README.md`)
 - The year Selam Butchery & Grocery 2 opened (story timeline shows "Expansion"), room amenities and the vegetarian dishes on the menu — confirm they match what Selam Village really offers
-- `CATERING_EMAIL` in `script.js` and the email link in the footer of each page
+- Booking forms → Google Sheet + email: follow `google-sheet/SETUP.md`, then paste the web-app URL into `SHEET_URL` in `script.js`
+- The email link in the footer of each page
 - Map pin: SELAM VILLAGE, plus code 2QR3+98W, Addis Ababa (9.040987, 38.753328); directions open https://maps.app.goo.gl/ej9dbjs5g9aEZ6Nj7
 
 ## Files
 - `*.html` — one file per page (English text; header/footer are repeated in each page, so edit nav links in all of them)
 - `i18n.js` — Amharic translations keyed by `data-i18n`
 - `styles.css` — design
-- `script.js` — language toggle, nav, menu tabs, form
+- `script.js`: language toggle, nav, menu tabs, Ethiopian date picker, booking forms (sent to Google Sheet)
+- `google-sheet/`: the Google Apps Script that saves bookings to a sheet and emails you, with setup steps

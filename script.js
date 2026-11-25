@@ -1,6 +1,9 @@
 (() => {
   document.documentElement.classList.add("js");
-  const BOOKING_EMAIL = "info@selamvillage.com"; // TODO: replace with the real address
+  // Paste the Google Apps Script web-app URL here (see google-sheet/SETUP.md).
+  // While it is empty, forms fall back to opening the visitor's email app.
+  const SHEET_URL = "";
+  const BOOKING_EMAIL = "info@selamvillage.com"; // fallback only
 
   /* ================= Ethiopian calendar ================= */
   const ET_MONTHS = ["መስከረም", "ጥቅምት", "ኅዳር", "ታኅሣሥ", "ጥር", "የካቲት", "መጋቢት", "ሚያዝያ", "ግንቦት", "ሰኔ", "ሐምሌ", "ነሐሴ", "ጳጉሜ"];
@@ -142,10 +145,22 @@
     if (fromUrl) choose(fromUrl, false);
   });
 
-  /* ================= Booking forms → email ================= */
+  /* ================= Booking forms → Google Sheet + email ================= */
+  // Column names in the sheet are always English, whatever language the visitor uses
+  const FIELD_LABELS = {
+    pkg: "Package", room: "Room", where: "Where", type: "Event type", name: "Name", phone: "Phone",
+    email: "Email", date: "Event date", checkin: "Check in", checkout: "Check out",
+    guests: "Guests", rooms: "Rooms", msg: "Message",
+  };
   document.querySelectorAll("form.booking-form").forEach(form => {
     const status = form.querySelector(".form-status");
-    form.addEventListener("submit", e => {
+    const button = form.querySelector('[type="submit"]');
+    const say = (key, isError) => {
+      status.classList.toggle("error", !!isError);
+      status.dataset.key = key;
+      status.textContent = t(key);
+    };
+    form.addEventListener("submit", async e => {
       e.preventDefault();
       let ok = true;
       form.querySelectorAll("[required]").forEach(f => {
@@ -155,25 +170,55 @@
         if (et && et.classList.contains("et-date")) et.classList.toggle("invalid", bad);
         if (bad) ok = false;
       });
-      status.classList.toggle("error", !ok);
-      status.dataset.key = ok ? "form.ok" : "form.err";
-      status.textContent = t(status.dataset.key);
-      if (!ok) return;
+      if (!ok) return say("form.err", true);
 
-      const valueOf = el => {
-        if (el.tagName === "SELECT") return el.options[el.selectedIndex].text;
+      const valueOf = (el, english) => {
+        if (el.tagName === "SELECT") {
+          const opt = el.options[el.selectedIndex];
+          return english ? (EN[opt.dataset.i18n] || opt.text) : opt.text;
+        }
         if (el.type === "date" && el.value) return `${el.value} (${ethLabel(isoToEth(el.value))})`;
-        return el.value || "-";
+        return el.value.trim();
       };
-      const lines = [];
+      const fields = [];
       [...form.elements].forEach(el => {
-        if (!el.name || el.type === "submit") return;
-        const label = el.closest("label")?.querySelector("span")?.textContent.trim() || el.name;
-        lines.push(el.tagName === "TEXTAREA" ? `\n${label}:\n${el.value}` : `${label}: ${valueOf(el)}`);
+        if (!el.name || el.type === "submit" || el.name === "website") return;
+        fields.push([FIELD_LABELS[el.name] || el.name, valueOf(el, true) || "-"]);
       });
-      const subject = (form.dataset.subject || "Booking request") + " | " +
-        (form.dataset.subjectFields || "").split(",").filter(Boolean).map(n => valueOf(form.elements[n])).join(" | ");
-      window.location.href = `mailto:${BOOKING_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+      fields.push(["Language", lang === "am" ? "Amharic" : "English"]);
+      const summaryNames = (form.dataset.subjectFields || "").split(",").filter(Boolean);
+      const summary = [form.elements.name.value.trim(), ...summaryNames.map(n => valueOf(form.elements[n], true))].join(" | ");
+
+      if (!SHEET_URL) {
+        // Fallback: open the visitor's email app
+        const subject = (form.dataset.subject || "Booking request") + " | " + summary;
+        const body = fields.map(([k, v]) => `${k}: ${v}`).join("\n");
+        say("form.ok");
+        window.location.href = `mailto:${BOOKING_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        return;
+      }
+      button.disabled = true;
+      say("form.sending");
+      try {
+        await fetch(SHEET_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            form: form.id === "roomForm" ? "Rooms" : "Catering",
+            summary, fields,
+            website: form.elements.website ? form.elements.website.value : "",
+          }),
+        });
+        say("form.sent");
+        form.reset();
+        form.querySelectorAll(".et-date select").forEach(sel => { sel.value = ""; });
+        document.querySelectorAll(".pkg.chosen").forEach(c => c.classList.remove("chosen"));
+      } catch (_) {
+        say("form.fail", true);
+      } finally {
+        button.disabled = false;
+      }
     });
   });
 })();

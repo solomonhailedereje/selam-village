@@ -415,3 +415,6 @@ html[lang="am"] .hero-am { font-size: inherit; font-weight: 700; opacity: 1; mar
 .card:nth-child(4), .card:nth-child(5) { grid-column: span 3; }
 @media (max-width: 900px) { .card, .card:nth-child(4) { grid-column: span 1; } .card:nth-child(5) { grid-column: span 2; } }
 @media (max-width: 560px) { .card, .card:nth-child(n) { grid-column: auto; } }
+/* Spam trap: invisible to people, bots fill it in */
+.hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
+.inquiry .btn[disabled] { opacity: .6; cursor: wait; }
