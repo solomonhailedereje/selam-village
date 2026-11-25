@@ -2,10 +2,10 @@
   <defs>
     <mask id="h" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="110">
       <rect width="120" height="110" fill="#fff"/>
-      <ellipse cx="46" cy="46" rx="4.6" ry="2.3" transform="rotate(25 46 46)" fill="#000"/>
-      <ellipse cx="74" cy="46" rx="4.6" ry="2.3" transform="rotate(-25 74 46)" fill="#000"/>
-      <ellipse cx="52" cy="97" rx="4.6" ry="3.2" transform="rotate(30 52 97)" fill="#000"/>
-      <ellipse cx="68" cy="97" rx="4.6" ry="3.2" transform="rotate(-30 68 97)" fill="#000"/>
+      <ellipse cx="45.5" cy="48" rx="4.4" ry="3" transform="rotate(-6 45.5 48)" fill="#000"/>
+      <ellipse cx="74.5" cy="48" rx="4.4" ry="3" transform="rotate(6 74.5 48)" fill="#000"/>
+      <ellipse cx="52" cy="97" rx="4.2" ry="3" transform="rotate(15 52 97)" fill="#000"/>
+      <ellipse cx="68" cy="97" rx="4.2" ry="3" transform="rotate(-15 68 97)" fill="#000"/>
     </mask>
   </defs>
   <g mask="url(#h)" fill="#8a0303">
