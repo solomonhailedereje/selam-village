@@ -164,7 +164,7 @@
       e.preventDefault();
       let ok = true;
       form.querySelectorAll("[required]").forEach(f => {
-        const bad = !f.value.trim();
+        const bad = !f.value.trim() || (f.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim()));
         f.classList.toggle("invalid", bad);
         const et = f.nextElementSibling;
         if (et && et.classList.contains("et-date")) et.classList.toggle("invalid", bad);
@@ -186,6 +186,15 @@
         fields.push([FIELD_LABELS[el.name] || el.name, valueOf(el, true) || "-"]);
       });
       fields.push(["Language", lang === "am" ? "Amharic" : "English"]);
+      // The same details as the visitor saw them (their language), for their confirmation email
+      const shown = [];
+      [...form.elements].forEach(el => {
+        if (!el.name || el.type === "submit" || el.name === "website") return;
+        const label = el.closest("label")?.querySelector("span")?.textContent.trim() || FIELD_LABELS[el.name] || el.name;
+        let v = valueOf(el, false);
+        if (el.type === "date" && el.value) v = lang === "am" ? ethLabel(isoToEth(el.value)) : el.value;
+        if (v) shown.push([label, v]);
+      });
       const summaryNames = (form.dataset.subjectFields || "").split(",").filter(Boolean);
       const summary = [form.elements.name.value.trim(), ...summaryNames.map(n => valueOf(form.elements[n], true))].join(" | ");
 
@@ -206,7 +215,7 @@
           headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify({
             form: form.id === "roomForm" ? "Rooms" : "Catering",
-            summary, fields,
+            summary, fields, shown, lang,
             website: form.elements.website ? form.elements.website.value : "",
           }),
         });

@@ -32,6 +32,14 @@ const SHEET_URL = "";
 
 (or send it to whoever maintains the site). Push the change to GitHub.
 
+## Confirmation email to the customer
+Every customer automatically gets a "we received your request" email, in the language they used
+on the website (English or Amharic), listing what they filled in and saying you will call to confirm.
+- It is sent from the Gmail account that owns the sheet, with the name "Selam Village".
+  If the customer presses Reply, it goes to `NOTIFY_EMAIL` (or the sheet owner).
+- To turn it off, set `SEND_CONFIRMATION = false` in the script.
+- A free Gmail account can send about 100 emails a day this way, which is plenty.
+
 ## Checking bookings
 - **Email:** one email per booking, subject "New event / catering booking: …" or
   "New room booking: …". Press **Reply** to answer the customer directly (if they gave an email).

@@ -96,7 +96,7 @@ window.SELAM_AM = {
   "form.msg": "ተጨማሪ ይንገሩን",
   "form.submit": "ጥያቄውን ይላኩ",
   "form.ok": "እናመሰግናለን! የኢሜይል መተግበሪያዎ ይከፈታል፤ በቅርቡ እናገኝዎታለን።",
-  "form.err": "እባክዎ ስም፣ ስልክ፣ ቀንና የእንግዶች ብዛት ያስገቡ።",
+  "form.err": "እባክዎ ሁሉንም አስፈላጊ መረጃዎች ከትክክለኛ ኢሜይል አድራሻ ጋር ያስገቡ።",
 
   "contact.eyebrow": "ይጎብኙን",
   "contact.title": "እንደ እንግዳ ይምጡ፣ እንደ ቤተሰብ ይሂዱ",
@@ -221,7 +221,7 @@ window.SELAM_AM = {
   "hours.t1": "ጠዋት 2:00 – ምሽት 4:00",
   "hours.t2": "ጠዋት 2:00 – ሌሊት 5:00",
   "form.sending": "በመላክ ላይ…",
-  "form.sent": "እናመሰግናለን! ጥያቄዎ ተልኳል። ለማረጋገጥ በቅርቡ እንደውልልዎታለን።",
+  "form.sent": "እናመሰግናለን! ጥያቄዎ ተልኳል። የማረጋገጫ ኢሜይል ልከንልዎታል፤ በቅርቡም እንደውልልዎታለን።",
   "form.fail": "ይቅርታ፣ ችግር ተፈጥሯል። እባክዎ በ+251 95 831 2525 ይደውሉልን።",
   "footer.tag": "ከ1980 ዓ.ም. ጀምሮ ትክክለኛ የኢትዮጵያ ምግብና የድግስ አገልግሎት።",
   "footer.follow": "ይከተሉን",
@@ -229,7 +229,7 @@ window.SELAM_AM = {
 
 window.SELAM_EN_EXTRA = {
   "form.sending": "Sending…",
-  "form.sent": "Thank you! Your request has been sent. We'll call you shortly to confirm.",
+  "form.sent": "Thank you! Your request has been sent. A confirmation email is on its way and we'll call you shortly.",
   "form.fail": "Sorry, something went wrong. Please call us on +251 95 831 2525.",
   "card.menu": "Tire siga, kitfo, ox & goat tibs, dulet, vegetarian dishes and a full bar.",
   "tag.special": "House special",
@@ -267,5 +267,5 @@ window.SELAM_EN_EXTRA = {
   "gal.5": "Beyaynetu",
   "gal.6": "Events at Selam Village",
   "form.ok": "Thank you! Your email app will open to send the inquiry. We'll be in touch shortly.",
-  "form.err": "Please fill in your name, phone, event date and guest count."
+  "form.err": "Please fill in all required fields, including a valid email address."
 };
