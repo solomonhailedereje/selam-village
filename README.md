@@ -1,11 +1,11 @@
 # Selam Village — ሰላም ቪሌጅ
 
-Website for **Selam Village**, a traditional Ethiopian restaurant and catering company established in 1983 E.C. (1991 G.C.) as Selam Butchery & Grocery.
+Website for **Selam Village**, a traditional Ethiopian restaurant and catering company established in 1980 E.C. (1988 G.C.) as Selam Butchery & Grocery.
 
 - Bilingual: English / Amharic (toggle in the header, choice is remembered). In Amharic, years use the Ethiopian calendar and booking forms show an Ethiopian-calendar date picker (dates are converted to Gregorian in the email)
 - Location: Giorgis, next to Addis Ababa Restaurant, Addis Ababa
 - Separate short pages: `index.html` (home), `story.html`, `menu.html`, `garden.html` (garden & in-house events), `rooms.html` (guest rooms + booking request form), `catering.html` (clickable packages that open a pre-filled booking form). Address, phone, email, opening hours and directions are in the footer of every page; the map is at the end of the home page.
-- Ox-skull logo (`images/logo-mark.svg`; the round "Since 1983 · ከ1983 ጀምሮ" emblem is inline SVG in each page)
+- Ox-skull logo (`images/logo-mark.svg`; the round "SINCE 1988 · ከ፲፱፻፹ ዓ.ም. ጀምሮ" emblem is inline SVG in each page)
 - Food photos from Wikimedia Commons (free licences, credited under **Photo credits** in every page footer)
 - Pure HTML/CSS/JS — no build step. Open `index.html` or host on GitHub Pages.
 
