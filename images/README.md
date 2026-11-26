@@ -9,3 +9,4 @@ Authors and licences are listed under **Photo credits** in the footer of every p
 - `rooms.jpg`: a photo of a guest room. It appears as the Rooms page banner and on the home-page Rooms card; until it exists a bed icon shows.
 - `garden.jpg`: a photo of the Selam Village garden. It appears automatically as the Garden & Events page banner and in the garden tile; until it exists a green pattern shows.
 - To swap any food photo for one of the restaurant's own, overwrite the file in `photos/` with the same name (and remove its line from the Photo credits in each page footer).
+- `story.jpg`: the original Selam Butchery & Grocery shop. It is the Our Story page banner.
