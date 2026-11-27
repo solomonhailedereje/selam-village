@@ -160,7 +160,7 @@ html[lang="am"] .page-hero-am { display: none; }
 .timeline li { display: grid; grid-template-columns: 90px 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
 .t-year { font-weight: 700; color: var(--accent); }
 .t-text { color: var(--text); }
-.stats { margin-top: 64px; display: grid; grid-template-columns: repeat(4, 1fr); background: var(--band); }
+.stats { margin-top: 64px; display: grid; grid-template-columns: repeat(3, 1fr); background: var(--band); }
 .stat { padding: 32px 28px; }
 .stat + .stat { border-left: 1px solid var(--line); }
 .stat-num { display: block; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 8px; }
@@ -313,7 +313,7 @@ html[lang="am"] .page-hero-am { display: none; }
   .card:nth-child(5) { grid-column: span 2; }
   .packages, .steps { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
-  .stat:nth-child(3) { border-left: 0; }
+  .stat:nth-child(3) { border-left: 0; grid-column: 1 / -1; }
   .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
   .panel-img { position: static; aspect-ratio: 16 / 9; }
   .footer-links { justify-content: start; }
