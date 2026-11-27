@@ -72,6 +72,7 @@ html[lang="am"] .eyebrow { letter-spacing: .02em; font-size: .9rem; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap; }
 .brand-name { font-weight: 700; font-size: 1.2rem; letter-spacing: -0.01em; }
 .brand-sub { font-size: .72rem; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.brand-sub .since { font-family: "Pinyon Script", "Snell Roundhand", cursive; font-size: 1.45em; text-transform: none; letter-spacing: 0; color: var(--ink); line-height: 1; }
 .am-inline { font-family: var(--font-am); text-transform: none; }
 
 .nav-links { display: flex; align-items: stretch; height: 100%; gap: 4px; margin-right: auto; }
